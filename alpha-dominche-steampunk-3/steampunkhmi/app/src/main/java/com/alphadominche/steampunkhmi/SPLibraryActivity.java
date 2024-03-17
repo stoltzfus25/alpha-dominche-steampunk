@@ -251,24 +251,18 @@ public class SPLibraryActivity extends SPActivity implements SPMainMenuHaver, On
     // OnClickListener
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.menu_button:
-                mSearchView.clearFocus();
-                if (mShowingMenu) {
-                    hideMenu();
-                } else {
-                    showMenu();
-                }
-                break;
-            case R.id.machine_settings_button:
-                Intent intent = new Intent(this, SPFavoritesActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.subscribe_button:
-                subscribeAction();
-                break;
-            default:
-                break;
+        if (view.getId() == R.id.menu_button) {
+            mSearchView.clearFocus();
+            if (mShowingMenu) {
+                hideMenu();
+            } else {
+                showMenu();
+            }
+        } else if (view.getId() == R.id.machine_settings_button) {
+            Intent intent = new Intent(this, SPFavoritesActivity.class);
+            startActivity(intent);
+        } else if (view.getId() == R.id.subscribe_button) {
+            subscribeAction();
         }
     }
 
@@ -276,87 +270,84 @@ public class SPLibraryActivity extends SPActivity implements SPMainMenuHaver, On
     public void onItemClick(AdapterView<?> item, View view, int position, long arg3) {
 
 
-        switch (item.getId()) {
-            case R.id.search_list:
-                // this piece here is to test functionality it should be getting the
-                // values by the roaster username
+        if (item.getId() == R.id.search_list) {
+            // this piece here is to test functionality it should be getting the
+            // values by the roaster username
 
-                Cursor roasterCursor = (Cursor) item.getAdapter().getItem(position);
-                String username = roasterCursor.getString(roasterCursor.getColumnIndex(RoasterTable.USERNAME));
-                mSelectedRoasterName = username;
-                mSelectedRoaster = roasterCursor.getLong(roasterCursor.getColumnIndex(RoasterTable.STEAMPUNK_ID));
-                boolean subscribedTo = roasterCursor.getInt(roasterCursor.getColumnIndex(RoasterTable.SUBSCRIBED_TO)) == 1 ? true : false;
+            Cursor roasterCursor = (Cursor) item.getAdapter().getItem(position);
+            String username = roasterCursor.getString(roasterCursor.getColumnIndex(RoasterTable.USERNAME));
+            mSelectedRoasterName = username;
+            mSelectedRoaster = roasterCursor.getLong(roasterCursor.getColumnIndex(RoasterTable.STEAMPUNK_ID));
+            boolean subscribedTo = roasterCursor.getInt(roasterCursor.getColumnIndex(RoasterTable.SUBSCRIBED_TO)) == 1 ? true : false;
 
-                TextView roasterTitle = (TextView) findViewById(R.id.roaster_name);
-                roasterTitle.setText(username);
-                Cursor roastersRecipes = getContentResolver().query(
-                        Provider.RECIPE_CONTENT_URI,
-                        RecipeTable.ALL_COLUMNS,
-                        RecipeTable.STEAMPUNK_USER_ID + "=?",
-                        new String[]{Long.toString(mSelectedRoaster)},
-                        RecipeTable.NAME + Constants.ASCENDING);
-                roastersRecipes.moveToFirst();
+            TextView roasterTitle = (TextView) findViewById(R.id.roaster_name);
+            roasterTitle.setText(username);
+            Cursor roastersRecipes = getContentResolver().query(
+                    Provider.RECIPE_CONTENT_URI,
+                    RecipeTable.ALL_COLUMNS,
+                    RecipeTable.STEAMPUNK_USER_ID + "=?",
+                    new String[]{Long.toString(mSelectedRoaster)},
+                    RecipeTable.NAME + Constants.ASCENDING);
+            roastersRecipes.moveToFirst();
 
-                if (roastersRecipes.getCount() == 0) {
+            if (roastersRecipes.getCount() == 0) {
 
-                    if (!subscribedTo) {
-                        System.out.println(username);
-                        mRecipeList.setVisibility(View.GONE);
-                        mSubscribeButton.setVisibility(View.VISIBLE);
-                        SPLibraryCursorAdapter adapter = new SPLibraryCursorAdapter(
-                                this,
-                                R.drawable.library_recipe_name_view,
-                                roastersRecipes,
-                                new String[]{RecipeTable.ID, RecipeTable.TYPE, RecipeTable.NAME},
-                                new int[]{android.R.id.text1},
-                                new TreeSet<Long>());
+                if (!subscribedTo) {
+                    System.out.println(username);
+                    mRecipeList.setVisibility(View.GONE);
+                    mSubscribeButton.setVisibility(View.VISIBLE);
+                    SPLibraryCursorAdapter adapter = new SPLibraryCursorAdapter(
+                            this,
+                            R.drawable.library_recipe_name_view,
+                            roastersRecipes,
+                            new String[]{RecipeTable.ID, RecipeTable.TYPE, RecipeTable.NAME},
+                            new int[]{android.R.id.text1},
+                            new TreeSet<Long>());
 
-                        mRecipeList.setAdapter(adapter);
-                        break;
-                    } else {
-                        mRecipeList.setVisibility(View.GONE);
-                        mSubscribeButton.setVisibility(View.GONE);
-                        break;
-                    }
+                    mRecipeList.setAdapter(adapter);
+                    //break;
+                } else {
+                    mRecipeList.setVisibility(View.GONE);
+                    mSubscribeButton.setVisibility(View.GONE);
+                    //break;
                 }
-                mRecipeList.setVisibility(View.VISIBLE);
-                mSubscribeButton.setVisibility(View.GONE);
-                String userType = SteampunkUtils
-                        .getCurrentSteampunkUserType(getApplicationContext());
-                long userId = SteampunkUtils
-                        .getCurrentSteampunkUserId(getApplicationContext());
+            }
+            mRecipeList.setVisibility(View.VISIBLE);
+            mSubscribeButton.setVisibility(View.GONE);
+            String userType = SteampunkUtils
+                    .getCurrentSteampunkUserType(getApplicationContext());
+            long userId = SteampunkUtils
+                    .getCurrentSteampunkUserId(getApplicationContext());
 
-                String thisUsersName = SPModel.getInstance(this).getUser().getName();
-                SPUser currentSPUser = new SPUser(userId, thisUsersName, userType); //we may need access to the name
+            String thisUsersName = SPModel.getInstance(this).getUser().getName();
+            SPUser currentSPUser = new SPUser(userId, thisUsersName, userType); //we may need access to the name
 
-                Cursor favoritesCursor = getContentResolver().query(Provider.FAVORITE_CONTENT_URI, FavoriteTable.ALL_COLUMNS, null, null, null);
-                favoritesCursor.moveToFirst();
-                TreeSet<Long> favorites = new TreeSet<Long>();
+            Cursor favoritesCursor = getContentResolver().query(Provider.FAVORITE_CONTENT_URI, FavoriteTable.ALL_COLUMNS, null, null, null);
+            favoritesCursor.moveToFirst();
+            TreeSet<Long> favorites = new TreeSet<Long>();
 
-                for (int i = 0; i < favoritesCursor.getCount(); i++) {
-                    long recipeId = favoritesCursor.getLong(favoritesCursor.getColumnIndex(FavoriteTable.RECIPE_ID));
-                    favorites.add(recipeId);
-                    favoritesCursor.moveToNext();
-                }
-                favoritesCursor.close();
+            for (int i = 0; i < favoritesCursor.getCount(); i++) {
+                long recipeId = favoritesCursor.getLong(favoritesCursor.getColumnIndex(FavoriteTable.RECIPE_ID));
+                favorites.add(recipeId);
+                favoritesCursor.moveToNext();
+            }
+            favoritesCursor.close();
 
-                SPLibraryCursorAdapter adapter = new SPLibraryCursorAdapter(
-                        this,
-                        R.drawable.library_recipe_name_view,
-                        roastersRecipes,
-                        new String[]{RecipeTable.ID, RecipeTable.TYPE, RecipeTable.NAME},
-                        new int[]{android.R.id.text1},
-                        favorites);
-                // TODO set adapter to recipes from the selected roaster or a subscribe button if not subscribed still a work in progress
+            SPLibraryCursorAdapter adapter = new SPLibraryCursorAdapter(
+                    this,
+                    R.drawable.library_recipe_name_view,
+                    roastersRecipes,
+                    new String[]{RecipeTable.ID, RecipeTable.TYPE, RecipeTable.NAME},
+                    new int[]{android.R.id.text1},
+                    favorites);
+            // TODO set adapter to recipes from the selected roaster or a subscribe button if not subscribed still a work in progress
 
-                mRecipeList.setAdapter(adapter);
+            mRecipeList.setAdapter(adapter);
 
-                break;
-            case R.id.library_list_recipes:
-                SPLibraryCursorAdapter recipeListAdapter = (SPLibraryCursorAdapter) item.getAdapter();
-                recipeListAdapter.toggleFavorite(position);
-                recipeListAdapter.notifyDataSetChanged();
-                break;
+        } else if (view.getId() == R.id.library_list_recipes) {
+            SPLibraryCursorAdapter recipeListAdapter = (SPLibraryCursorAdapter) item.getAdapter();
+            recipeListAdapter.toggleFavorite(position);
+            recipeListAdapter.notifyDataSetChanged();
         }
     }
 

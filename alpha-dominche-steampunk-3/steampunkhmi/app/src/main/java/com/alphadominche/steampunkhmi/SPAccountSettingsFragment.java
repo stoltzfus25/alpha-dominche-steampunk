@@ -210,12 +210,11 @@ public class SPAccountSettingsFragment extends SPFragment {
     // OnClickListener
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.save_button:
+        if (view.getId() == R.id.save_button) {
 
-                getSettingsFromView();
+            getSettingsFromView();
 
-                //TODO Allow password changes
+            //TODO Allow password changes
 //			if (mNewPassword.length() > 0) {
 //				if (mNewPassword.equals(mConfirmPassword)) {
 //					mPassword = mNewPassword;
@@ -225,29 +224,23 @@ public class SPAccountSettingsFragment extends SPFragment {
 //				}
 //			}
 
-                DefaultPersistenceServiceHelper serviceHelper = DefaultPersistenceServiceHelper
-                        .getInstance(getActivity().getApplicationContext());
-                serviceHelper.saveAccountSettings(mUsername, mEmail, mAddress, mCity, mState,
-                        mCountry, mZip, mProtectRecipes);
+            DefaultPersistenceServiceHelper serviceHelper = DefaultPersistenceServiceHelper
+                    .getInstance(getActivity().getApplicationContext());
+            serviceHelper.saveAccountSettings(mUsername, mEmail, mAddress, mCity, mState,
+                    mCountry, mZip, mProtectRecipes);
 
-                this.getActivity().finish();
-                break;
-            case R.id.cancel_button:
-                this.getActivity().finish();
-                break;
-            case R.id.account_settings_change_pin:
-                changePIN();
-                break;
-            case R.id.account_settings_change_password:
-                changePassword();
-            case R.id.account_settings_updates:
-                checkForUpdates();
-                break;
-            case R.id.account_settings_protect_recipes:
-                boolean checked = mProtectRecipesCheckbox.isChecked();
-                mProtectRecipesCheckbox.setChecked(checked);
-            default:
-                break;
+            this.getActivity().finish();
+        } else if (view.getId() == R.id.cancel_button) {
+            this.getActivity().finish();
+        } else if (view.getId() == R.id.account_settings_change_pin) {
+            changePIN();
+        } else if (view.getId() == R.id.account_settings_change_password) {
+            changePassword();
+        } else if (view.getId() == R.id.account_settings_updates) {
+            checkForUpdates();
+        } else if (view.getId() == R.id.account_settings_protect_recipes) {
+            boolean checked = mProtectRecipesCheckbox.isChecked();
+            mProtectRecipesCheckbox.setChecked(checked);
         }
     }
 

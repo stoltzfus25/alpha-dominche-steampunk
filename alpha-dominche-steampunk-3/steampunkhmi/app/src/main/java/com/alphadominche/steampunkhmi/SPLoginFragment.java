@@ -67,34 +67,28 @@ public class SPLoginFragment extends SPFragment {
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.login_button:
-                mSubmitButton.setEnabled(false);
-                mSubmitButton.setClickable(false);
-                InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(
-                        Context.INPUT_METHOD_SERVICE);
-                imm.hideSoftInputFromWindow(mPassword.getWindowToken(), 0);
+        if (view.getId() == R.id.login_button) {
+            mSubmitButton.setEnabled(false);
+            mSubmitButton.setClickable(false);
+            InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(
+                    Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(mPassword.getWindowToken(), 0);
 
-                DefaultPersistenceServiceHelper.getInstance(
-                        getActivity().getApplicationContext()).login(
-                        mUsername.getEditableText().toString(),
-                        mPassword.getEditableText().toString());
+            DefaultPersistenceServiceHelper.getInstance(
+                    getActivity().getApplicationContext()).login(
+                    mUsername.getEditableText().toString(),
+                    mPassword.getEditableText().toString());
 
-                mDialog = new ProgressDialog(getActivity());
-                mDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-                mDialog.setMessage(getActivity().getResources().getString(R.string.connect_to_network_prompt));
-                mDialog.setCancelable(false);
-                mDialog.show();
+            mDialog = new ProgressDialog(getActivity());
+            mDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+            mDialog.setMessage(getActivity().getResources().getString(R.string.connect_to_network_prompt));
+            mDialog.setCancelable(false);
+            mDialog.show();
 
-                break;
-            case R.id.reset_button:
-                //send command to reset password
-                SPPasswordResetModalFragment frag = new SPPasswordResetModalFragment();
-                frag.show(getFragmentManager(), "PW_RESET");
-
-                break;
-            default:
-                break;
+        } else if (view.getId() == R.id.reset_button) {
+            //send command to reset password
+            SPPasswordResetModalFragment frag = new SPPasswordResetModalFragment();
+            frag.show(getFragmentManager(), "PW_RESET");
         }
     }
 

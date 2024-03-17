@@ -58,31 +58,26 @@ public class SPCleaningCycleFragment extends SPFragment {
     // OnClickListener
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.cleaning_cycle_settings_button:
-                Intent intent = new Intent();
-                intent.setClass(getActivity(), SPCleaningCycleSettingsActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.cleaning_cycle_close_button:
-                SPModel model = SPModel.getInstance(getActivity());
-                int crucibles = model.getCrucibleCount();
-                for (int i = 0; i < crucibles; i++) {
-                    SPCrucibleState state = model.getStateForCrucible(i);
-                    if (state == SPCrucibleState.CLEANING_FILL_AND_HEAT ||
-                            state == SPCrucibleState.CLEANING_DRAIN ||
-                            state == SPCrucibleState.CLEANING_AGITATING ||
-                            state == SPCrucibleState.WAITING_FOR_CLEANING_RINSE ||
-                            state == SPCrucibleState.CLEANING_RINSE_FILL_AND_HEAT ||
-                            state == SPCrucibleState.CLEANING_RINSE_DRAIN ||
-                            state == SPCrucibleState.CLEANING_RINSE_AGITATING) {
-                        model.stopBrewingOnCrucible(i);
-                    }
+        if (view.getId() == R.id.cleaning_cycle_settings_button) {
+            Intent intent = new Intent();
+            intent.setClass(getActivity(), SPCleaningCycleSettingsActivity.class);
+            startActivity(intent);
+        } else if (view.getId() == R.id.cleaning_cycle_close_button) {
+            SPModel model = SPModel.getInstance(getActivity());
+            int crucibles = model.getCrucibleCount();
+            for (int i = 0; i < crucibles; i++) {
+                SPCrucibleState state = model.getStateForCrucible(i);
+                if (state == SPCrucibleState.CLEANING_FILL_AND_HEAT ||
+                        state == SPCrucibleState.CLEANING_DRAIN ||
+                        state == SPCrucibleState.CLEANING_AGITATING ||
+                        state == SPCrucibleState.WAITING_FOR_CLEANING_RINSE ||
+                        state == SPCrucibleState.CLEANING_RINSE_FILL_AND_HEAT ||
+                        state == SPCrucibleState.CLEANING_RINSE_DRAIN ||
+                        state == SPCrucibleState.CLEANING_RINSE_AGITATING) {
+                    model.stopBrewingOnCrucible(i);
                 }
-                this.getActivity().finish();
-                break;
-            default:
-                break;
+            }
+            this.getActivity().finish();
         }
     }
 

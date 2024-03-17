@@ -121,21 +121,16 @@ public class SPCleaningCycleSettingsFragment extends SPFragment {
     // OnClickListener
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.cleaning_cycle_settings_save_button:
-                double cleaningVol = mCleaningVol;
-                if (model.getVolumeUnits() == SPVolumeUnitType.OUNCES) {
-                    cleaningVol = SPFlowMeter.convertFromOuncesToMilliliters(cleaningVol);
-                }
-                double cleaningTemp = SPServiceThermistor.convertFromTempToTemp(model.getTempUnits(), SPTempUnitType.KELVIN, mCleaningTemp);
-                model.setCleaningSettings(cleaningTemp, cleaningVol);
-                this.getActivity().finish();
-                break;
-            case R.id.cleaning_cycle_settings_cancel_button:
-                this.getActivity().finish();
-                break;
-            default:
-                break;
+        if (view.getId() == R.id.cleaning_cycle_settings_save_button) {
+            double cleaningVol = mCleaningVol;
+            if (model.getVolumeUnits() == SPVolumeUnitType.OUNCES) {
+                cleaningVol = SPFlowMeter.convertFromOuncesToMilliliters(cleaningVol);
+            }
+            double cleaningTemp = SPServiceThermistor.convertFromTempToTemp(model.getTempUnits(), SPTempUnitType.KELVIN, mCleaningTemp);
+            model.setCleaningSettings(cleaningTemp, cleaningVol);
+            this.getActivity().finish();
+        } else if (view.getId() == R.id.cleaning_cycle_settings_cancel_button) {
+            this.getActivity().finish();
         }
     }
 

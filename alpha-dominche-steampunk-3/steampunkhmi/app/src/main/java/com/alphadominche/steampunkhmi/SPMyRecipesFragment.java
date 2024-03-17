@@ -280,15 +280,10 @@ public class SPMyRecipesFragment extends SPFragment implements /*LoaderCallbacks
     // OnClickListener
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.save_button:
-                this.getActivity().finish();
-                break;
-            case R.id.cancel_button:
-                this.getActivity().finish();
-                break;
-            default:
-                break;
+        if (view.getId() == R.id.save_button) {
+            this.getActivity().finish();
+        } else if (view.getId() == R.id.cancel_button) {
+            this.getActivity().finish();
         }
     }
 

@@ -507,62 +507,52 @@ public class SPMachineSettingsFragment extends SPFragment implements Observer {
     // OnClickListener
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.save_button:
-                if (!mDisableSave) {
-                    for (int i = 0; i < mCrucibleCount; i++) {
-                        mMachineModel.setCrucibleLocked(i, mCrucibleStates.get(i));
-                    }
-                    mMachineModel.setUnits(mTempUnit, mVolumeUnit);
-                    mMachineModel.setMachineSettings(mBoilerTemp, mRinseTemp, mRinseVol);
-                    mMachineModel.setElevation(mElevation);
-                    mSerialNum = mSerialNumView.getText().toString();
-
-                    DefaultPersistenceServiceHelper d = DefaultPersistenceServiceHelper.getInstance(getActivity().getApplicationContext());
-                    d.saveMachineSettings(mSerialNum, mBoilerTemp, mRinseTemp, mRinseVol, mElevation, mCrucibleStates, mTempUnit, mVolumeUnit, mLocalOnly);
-
-                    mDisableBox.setVisibility(View.VISIBLE);
+        if (view.getId() == R.id.save_button) {
+            if (!mDisableSave) {
+                for (int i = 0; i < mCrucibleCount; i++) {
+                    mMachineModel.setCrucibleLocked(i, mCrucibleStates.get(i));
                 }
-                mDisableSave = true;
+                mMachineModel.setUnits(mTempUnit, mVolumeUnit);
+                mMachineModel.setMachineSettings(mBoilerTemp, mRinseTemp, mRinseVol);
+                mMachineModel.setElevation(mElevation);
+                mSerialNum = mSerialNumView.getText().toString();
 
-                break;
-            case R.id.cancel_button:
-                this.getActivity().finish();
-                break;
-            case R.id.machine_settings_calibrate:
-                if (mLocation != null && mLocation.hasAltitude()) {
-                    mElevation = mLocation.getAltitude();
-                    refreshUI();
-                }
-                break;
-            case R.id.machine_settings_farenheit:
-                mTempUnit = SPTempUnitType.FAHRENHEIT;
+                DefaultPersistenceServiceHelper d = DefaultPersistenceServiceHelper.getInstance(getActivity().getApplicationContext());
+                d.saveMachineSettings(mSerialNum, mBoilerTemp, mRinseTemp, mRinseVol, mElevation, mCrucibleStates, mTempUnit, mVolumeUnit, mLocalOnly);
+
+                mDisableBox.setVisibility(View.VISIBLE);
+            }
+            mDisableSave = true;
+
+        } else if (view.getId() == R.id.cancel_button) {
+            this.getActivity().finish();
+        } else if (view.getId() == R.id.machine_settings_calibrate) {
+            if (mLocation != null && mLocation.hasAltitude()) {
+                mElevation = mLocation.getAltitude();
                 refreshUI();
-                seekBarProgressChanged(mBoilerTempSlider, mBoilerTempSlider.getProgress());
-                seekBarProgressChanged(mRinseTempSlider, mRinseTempSlider.getProgress());
-                break;
-            case R.id.machine_settings_celcius:
-                mTempUnit = SPTempUnitType.CELCIUS;
-                refreshUI();
-                seekBarProgressChanged(mBoilerTempSlider, mBoilerTempSlider.getProgress());
-                seekBarProgressChanged(mRinseTempSlider, mRinseTempSlider.getProgress());
-                break;
-            case R.id.machine_settings_ml:
-                mVolumeUnit = SPVolumeUnitType.MILLILITERS;
-                refreshUI();
-                seekBarProgressChanged(mRinseVolSlider, mRinseVolSlider.getProgress());
-                break;
-            case R.id.machine_settings_oz:
-                mVolumeUnit = SPVolumeUnitType.OUNCES;
-                refreshUI();
-                seekBarProgressChanged(mRinseVolSlider, mRinseVolSlider.getProgress());
-                break;
-            case R.id.machine_settings_crucible_locked:
-                break;
-            case R.id.machine_settings_crucible_unlocked:
-                break;
-            default:
-                break;
+            }
+        } else if (view.getId() == R.id.machine_settings_farenheit) {
+            mTempUnit = SPTempUnitType.FAHRENHEIT;
+            refreshUI();
+            seekBarProgressChanged(mBoilerTempSlider, mBoilerTempSlider.getProgress());
+            seekBarProgressChanged(mRinseTempSlider, mRinseTempSlider.getProgress());
+        } else if (view.getId() == R.id.machine_settings_celcius) {
+            mTempUnit = SPTempUnitType.CELCIUS;
+            refreshUI();
+            seekBarProgressChanged(mBoilerTempSlider, mBoilerTempSlider.getProgress());
+            seekBarProgressChanged(mRinseTempSlider, mRinseTempSlider.getProgress());
+        } else if (view.getId() == R.id.machine_settings_ml) {
+            mVolumeUnit = SPVolumeUnitType.MILLILITERS;
+            refreshUI();
+            seekBarProgressChanged(mRinseVolSlider, mRinseVolSlider.getProgress());
+        } else if (view.getId() == R.id.machine_settings_oz) {
+            mVolumeUnit = SPVolumeUnitType.OUNCES;
+            refreshUI();
+            seekBarProgressChanged(mRinseVolSlider, mRinseVolSlider.getProgress());
+        } else if (view.getId() == R.id.machine_settings_crucible_locked) {
+            //
+        } else if (view.getId() == R.id.machine_settings_crucible_unlocked) {
+            //
         }
     }
 

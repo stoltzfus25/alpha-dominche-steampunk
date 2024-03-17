@@ -333,48 +333,38 @@ public class SPFavoritesFragment extends SPFragment implements LoaderCallbacks<C
     // OnClickListener
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.save_button:
-                mFavoritesModel.setSelectedRecipes(mSelectedRecipes);
-                this.getActivity().finish();
-                break;
-            case R.id.cancel_button:
-                this.getActivity().finish();
-                break;
-            case R.id.favorites_clean_selections:
-                for (int i = 0; i < mSelectedRecipes.size(); i++) {
-                    if (mFavoritesModel.getStateForCrucible(i) == SPCrucibleState.IDLE) {
-                        mSelectedRecipes.set(i, 0L);
-                    }
+        if (view.getId() == R.id.save_button) {
+            mFavoritesModel.setSelectedRecipes(mSelectedRecipes);
+            this.getActivity().finish();
+        } else if (view.getId() == R.id.cancel_button) {
+            this.getActivity().finish();
+        } else if (view.getId() == R.id.favorites_clean_selections) {
+            for (int i = 0; i < mSelectedRecipes.size(); i++) {
+                if (mFavoritesModel.getStateForCrucible(i) == SPCrucibleState.IDLE) {
+                    mSelectedRecipes.set(i, 0L);
                 }
-                refresh();
-                break;
-            case R.id.favorites_selection_1_view:
-                if (mSelected >= 0 && mFavoritesModel.getStateForCrucible(0) == SPCrucibleState.IDLE) {
-                    mSelectedRecipes.set(0, mSelected);
-                }
-                refresh();
-                break;
-            case R.id.favorites_selection_2_view:
-                if (mSelected >= 0 && mFavoritesModel.getStateForCrucible(1) == SPCrucibleState.IDLE) {
-                    mSelectedRecipes.set(1, mSelected);
-                }
-                refresh();
-                break;
-            case R.id.favorites_selection_3_view:
-                if (mSelected >= 0 && mFavoritesModel.getStateForCrucible(2) == SPCrucibleState.IDLE) {
-                    mSelectedRecipes.set(2, mSelected);
-                }
-                refresh();
-                break;
-            case R.id.favorites_selection_4_view:
-                if (mSelected >= 0 && mFavoritesModel.getStateForCrucible(3) == SPCrucibleState.IDLE) {
-                    mSelectedRecipes.set(3, mSelected);
-                }
-                refresh();
-                break;
-            default:
-                break;
+            }
+            refresh();
+        } else if (view.getId() == R.id.favorites_selection_1_view) {
+            if (mSelected >= 0 && mFavoritesModel.getStateForCrucible(0) == SPCrucibleState.IDLE) {
+                mSelectedRecipes.set(0, mSelected);
+            }
+            refresh();
+        } else if (view.getId() == R.id.favorites_selection_2_view) {
+            if (mSelected >= 0 && mFavoritesModel.getStateForCrucible(1) == SPCrucibleState.IDLE) {
+                mSelectedRecipes.set(1, mSelected);
+            }
+            refresh();
+        } else if (view.getId() == R.id.favorites_selection_3_view) {
+            if (mSelected >= 0 && mFavoritesModel.getStateForCrucible(2) == SPCrucibleState.IDLE) {
+                mSelectedRecipes.set(2, mSelected);
+            }
+            refresh();
+        } else if (view.getId() == R.id.favorites_selection_4_view) {
+            if (mSelected >= 0 && mFavoritesModel.getStateForCrucible(3) == SPCrucibleState.IDLE) {
+                mSelectedRecipes.set(3, mSelected);
+            }
+            refresh();
         }
         System.out.println(mSelectedRecipes);
     }

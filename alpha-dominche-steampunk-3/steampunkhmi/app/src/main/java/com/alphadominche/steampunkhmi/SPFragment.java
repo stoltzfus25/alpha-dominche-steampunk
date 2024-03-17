@@ -79,15 +79,10 @@ public abstract class SPFragment extends Fragment implements ImageView.OnClickLi
     // OnClickListener
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.save_button:
-                // TODO save the settings
-            case R.id.cancel_button:
-                this.getActivity().finish();
-                break;
-            default:
-                break;
+        if (view.getId() == R.id.save_button) {
+            // TODO save the settings
+        } else if (view.getId() == R.id.cancel_button) {
+            this.getActivity().finish();
         }
     }
-
 }

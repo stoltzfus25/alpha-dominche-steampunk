@@ -1,0 +1,4 @@
+#Sun Mar 17 16:47:32 EDT 2024
+base.0=/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

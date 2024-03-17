@@ -67,119 +67,103 @@ public class SPMainMenu extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                switch (v.getId()) {
-                    case R.id.main_menu_check_for_updates_button:
+                if (v.getId() == R.id.main_menu_check_for_updates_button) {
+                    intent = null;
+                    DefaultPersistenceServiceHelper.getInstance(getActivity()).checkForUpdates();
+                    hideMenu();
+                } else if (v.getId() == R.id.switchboard_button) {
+                    intent.setClass(getActivity(), SPSwitchboardActivity.class);
+                } else if (v.getId() == R.id.main_menu_add_coffee_recipe_button) {
+                    SPRecipe coffeeRecipe = SPRecipeDefaults.getNewCoffeeRecipe(SPModel.getInstance(getActivity()).getUser());
+                    SPModel.getInstance(getActivity()).setCurrentlyEditedRecipe(coffeeRecipe);
+                    intent.setClass(getActivity(), SPRecipeEditorActivity.class);
+                } else if (v.getId() == R.id.main_menu_add_tea_recipe_button) {
+                    SPRecipe teaRecipe = SPRecipeDefaults.getNewTeaRecipe(SPModel.getInstance(getActivity()).getUser());
+                    SPModel.getInstance(getActivity()).setCurrentlyEditedRecipe(teaRecipe);
+                    intent.setClass(getActivity(), SPRecipeEditorActivity.class);
+                } else if (v.getId() == R.id.main_menu_cleaning_cycle_button) {
+                    intent.setClass(getActivity(), SPCleaningCycleActivity.class);
+                } else if (v.getId() == R.id.main_menu_favorites_button) {
+                    intent.setClass(getActivity(), SPFavoritesActivity.class);
+                } else if (v.getId() == R.id.main_menu_crucibles_button) {
+                    if (getActivity().getClass() != SPCruciblesActivity.class)
+                        intent.setClass(getActivity(), SPCruciblesActivity.class);
+                    else
                         intent = null;
-                        DefaultPersistenceServiceHelper.getInstance(getActivity()).checkForUpdates();
-                        hideMenu();
-                        break;
-                    case R.id.switchboard_button:
-                        intent.setClass(getActivity(), SPSwitchboardActivity.class);
-                        break;
-                    case R.id.main_menu_add_coffee_recipe_button:
-                        SPRecipe coffeeRecipe = SPRecipeDefaults.getNewCoffeeRecipe(SPModel.getInstance(getActivity()).getUser());
-                        SPModel.getInstance(getActivity()).setCurrentlyEditedRecipe(coffeeRecipe);
-                        intent.setClass(getActivity(), SPRecipeEditorActivity.class);
-                        break;
-                    case R.id.main_menu_add_tea_recipe_button:
-                        SPRecipe teaRecipe = SPRecipeDefaults.getNewTeaRecipe(SPModel.getInstance(getActivity()).getUser());
-                        SPModel.getInstance(getActivity()).setCurrentlyEditedRecipe(teaRecipe);
-                        intent.setClass(getActivity(), SPRecipeEditorActivity.class);
-                        break;
-                    case R.id.main_menu_cleaning_cycle_button:
-                        intent.setClass(getActivity(), SPCleaningCycleActivity.class);
-                        break;
-                    case R.id.main_menu_favorites_button:
-                        intent.setClass(getActivity(), SPFavoritesActivity.class);
-                        break;
-                    case R.id.main_menu_crucibles_button:
-                        if (getActivity().getClass() != SPCruciblesActivity.class)
-                            intent.setClass(getActivity(), SPCruciblesActivity.class);
-                        else
-                            intent = null;
-                        hideMenu();
-                        break;
-                    case R.id.main_menu_library_button:
-                        if (getActivity().getClass() != SPLibraryActivity.class) {
-                            intent.setClass(getActivity(), SPLibraryActivity.class);
-                        } else {
-                            intent = null;
-                            ((SPLibraryActivity) getActivity()).hideMenu();
+                    hideMenu();
+                } else if (v.getId() == R.id.main_menu_library_button) {
+                    if (getActivity().getClass() != SPLibraryActivity.class) {
+                        intent.setClass(getActivity(), SPLibraryActivity.class);
+                    } else {
+                        intent = null;
+                        ((SPLibraryActivity) getActivity()).hideMenu();
+                    }
+                } else if (v.getId() == R.id.main_menu_logout_button) {
+                    new android.app.AlertDialog.Builder(getActivity(), AlertDialog.THEME_HOLO_DARK)
+                            .setIcon(android.R.drawable.ic_dialog_alert)
+                            .setTitle(getActivity().getResources().getString(R.string.logout_dialog_title))
+                            .setMessage(getActivity().getResources().getString(R.string.logout_confirm_question))
+                            .setPositiveButton(getActivity().getResources().getString(R.string.yes_capitalized), new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    stopUpdateService();
+                                    logout();
+                                }
+
+                                public void stopUpdateService() {
+                                    Intent SPUpdateServiceIntent = new Intent(getActivity(), SPUpdateService.class);
+                                    getActivity().stopService(SPUpdateServiceIntent);
+                                }
+
+                                private void logout() {
+                                    DefaultPersistenceServiceHelper.getInstance(getActivity().getBaseContext()).logout();
+                                    Intent intent = new Intent(getActivity(), SPLoginActivity.class);
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                    startActivity(intent);
+                                    getActivity().finish();
+                                }
+
+                            })
+                            .setNegativeButton(getActivity().getResources().getString(R.string.no_capitalized), null)
+                            .show();
+                    intent = null;
+                } else if (v.getId() == R.id.main_menu_machine_settings_button) {
+                    intent.setClass(getActivity(), SPMachineSettingsActivity.class);
+                } else if (v.getId() == R.id.main_menu_my_recipes_button) {
+                    intent.setClass(getActivity(), SPMyRecipesActivity.class);
+                } else if (v.getId() == R.id.main_menu_terms_and_policies_button) {
+                    intent.setClass(getActivity(), SPTermsActivity.class);
+                } else if (v.getId() == R.id.main_menu_force_stop) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(), AlertDialog.THEME_HOLO_DARK);
+                    builder.setTitle(getActivity().getResources().getString(R.string.force_stop_dialog_title));
+                    builder.setMessage(getActivity().getResources().getString(R.string.force_stop_confirm_question));
+                    builder.setInverseBackgroundForced(true);
+
+                    builder.setPositiveButton(getActivity().getResources().getString(R.string.ok_capitalized), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                            Intent clearStackIntent = new Intent(getActivity(), SPCruciblesActivity.class);
+                            getActivity().startActivity(clearStackIntent);
+                            getActivity().stopService(new Intent(getActivity(), SPUpdateService.class));
+                            getActivity().stopService(new Intent(SPIOIOService.START_SPIOIO_SERVICE_INTENT));
+                            android.os.Process.killProcess(android.os.Process.myPid());
+                            getActivity().finish();
+                            getActivity().getParent().finish();
+                            System.exit(0);
                         }
-                        break;
-                    case R.id.main_menu_logout_button:
-                        new android.app.AlertDialog.Builder(getActivity(), AlertDialog.THEME_HOLO_DARK)
-                                .setIcon(android.R.drawable.ic_dialog_alert)
-                                .setTitle(getActivity().getResources().getString(R.string.logout_dialog_title))
-                                .setMessage(getActivity().getResources().getString(R.string.logout_confirm_question))
-                                .setPositiveButton(getActivity().getResources().getString(R.string.yes_capitalized), new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        stopUpdateService();
-                                        logout();
-                                    }
+                    });
 
-                                    public void stopUpdateService() {
-                                        Intent SPUpdateServiceIntent = new Intent(getActivity(), SPUpdateService.class);
-                                        getActivity().stopService(SPUpdateServiceIntent);
-                                    }
+                    builder.setNegativeButton(getActivity().getResources().getString(R.string.cancel_capitalized), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    });
 
-                                    private void logout() {
-                                        DefaultPersistenceServiceHelper.getInstance(getActivity().getBaseContext()).logout();
-                                        Intent intent = new Intent(getActivity(), SPLoginActivity.class);
-                                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                                        startActivity(intent);
-                                        getActivity().finish();
-                                    }
-
-                                })
-                                .setNegativeButton(getActivity().getResources().getString(R.string.no_capitalized), null)
-                                .show();
-                        intent = null;
-                        break;
-                    case R.id.main_menu_machine_settings_button:
-                        intent.setClass(getActivity(), SPMachineSettingsActivity.class);
-                        break;
-                    case R.id.main_menu_my_recipes_button:
-                        intent.setClass(getActivity(), SPMyRecipesActivity.class);
-                        break;
-                    case R.id.main_menu_terms_and_policies_button:
-                        intent.setClass(getActivity(), SPTermsActivity.class);
-                        break;
-                    case R.id.main_menu_force_stop:
-                        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(), AlertDialog.THEME_HOLO_DARK);
-                        builder.setTitle(getActivity().getResources().getString(R.string.force_stop_dialog_title));
-                        builder.setMessage(getActivity().getResources().getString(R.string.force_stop_confirm_question));
-                        builder.setInverseBackgroundForced(true);
-
-                        builder.setPositiveButton(getActivity().getResources().getString(R.string.ok_capitalized), new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                                Intent clearStackIntent = new Intent(getActivity(), SPCruciblesActivity.class);
-                                getActivity().startActivity(clearStackIntent);
-                                getActivity().stopService(new Intent(getActivity(), SPUpdateService.class));
-                                getActivity().stopService(new Intent(SPIOIOService.START_SPIOIO_SERVICE_INTENT));
-                                android.os.Process.killProcess(android.os.Process.myPid());
-                                getActivity().finish();
-                                getActivity().getParent().finish();
-                                System.exit(0);
-                            }
-                        });
-
-                        builder.setNegativeButton(getActivity().getResources().getString(R.string.cancel_capitalized), new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                            }
-                        });
-
-                        Dialog dialog = builder.create();
-                        dialog.show();
-                        intent = null;
-
-                    default:
-                        break;
+                    Dialog dialog = builder.create();
+                    dialog.show();
+                    intent = null;
                 }
 
                 if (null != intent) {
