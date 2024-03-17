@@ -1,0 +1,874 @@
+[
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_inactive_stack.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/inactive_stack.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_roaster_list_textview.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/roaster_list_textview.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_seekbar_background.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/seekbar_background.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_right_dk_gray_border.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/right_dk_gray_border.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_activity_manual_mode.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/activity_manual_mode.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xxhdpi_favorite_star_image.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xxhdpi/favorite_star_image.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_border_light.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/border_light.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_crucible_modal.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_crucible_modal.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_remove_stack_button.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/remove_stack_button.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_library_recipe_name_view.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/library_recipe_name_view.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_ic_launcher.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_large_blue_slider_modal_progress_bkgd.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/large_blue_slider_modal_progress_bkgd.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_seekbar_progress_bg.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/seekbar_progress_bg.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-ldpi_ic_action_lock_closed.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-ldpi/ic_action_lock_closed.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xxhdpi_ad_mincher_logo.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xxhdpi/ad_mincher_logo.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_recipe_bkgd.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/recipe_bkgd.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/menu_main_menu_mockup.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/menu/main_menu_mockup.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_slider_border_thin.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/slider_border_thin.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_left_white_arrow.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/left_white_arrow.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/menu_home.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/menu/home.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_alphadominche_distressed_logo.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/alphadominche_distressed_logo.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_small_white_light_progress_bar_repeater.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/small_white_light_progress_bar_repeater.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_recipe_editor.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_recipe_editor.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_time_slider_bkgd.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/time_slider_bkgd.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_menu_btn.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/menu_btn.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_teal_star.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/teal_star.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_white_plus.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/white_plus.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_seekbar_progress.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/seekbar_progress.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_ic_action_document.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/ic_action_document.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_recipe_list_view_my.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/recipe_list_view_my.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/menu_coffee_recipe_editor.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/menu/coffee_recipe_editor.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_crucible_9_patch_red.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/crucible_9_patch_red.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_modal_slider_down_arrow.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/modal_slider_down_arrow.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_activity_library.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/activity_library.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_ic_action_bargraph.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/ic_action_bargraph.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_bottom_border.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/bottom_border.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-ldpi_ic_action_info.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-ldpi/ic_action_info.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/xml_searchable.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/xml/searchable.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_crucible_9_patch_glow.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/crucible_9_patch_glow.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_pw_reset_modal.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_pw_reset_modal.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_library_recipe_name_view.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/library_recipe_name_view.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_terms_and_policies.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_terms_and_policies.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_ic_launcher.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_white_slider_modal_progress_bkgd.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/white_slider_modal_progress_bkgd.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_agitation_graphic.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/agitation_graphic.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_small_red_light_progress_bar_repeater.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/small_red_light_progress_bar_repeater.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_container_glow1280.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/container_glow1280.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_main_menu_thin_horizontal_divider.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/main_menu_thin_horizontal_divider.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_ic_action_lock_closed.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/ic_action_lock_closed.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_slider_border.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/slider_border.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_ic_action_user.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/ic_action_user.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-ldpi_ic_action_bargraph.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-ldpi/ic_action_bargraph.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xhdpi_ic_action_coffeerecipe.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xhdpi/ic_action_coffeerecipe.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_add_stack_button.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/add_stack_button.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_crucible_button.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/crucible_button.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xhdpi_ic_action_document.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xhdpi/ic_action_document.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_alphadominche_cup_large.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/alphadominche_cup_large.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_large_red_slider_modal_progress_bkgd.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/large_red_slider_modal_progress_bkgd.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_black_pixel.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/black_pixel.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_sp_slider_modal_thumb.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/sp_slider_modal_thumb.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_right_white_arrow.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/right_white_arrow.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_ic_action_info.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/ic_action_info.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_green_slider_handle.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/green_slider_handle.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_agitation_time_bkgd.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/agitation_time_bkgd.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_sp_slider_modal_bkgd.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/sp_slider_modal_bkgd.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_drop_big_glow1280.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/drop_big_glow1280.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_lib_element_mod_bkgd.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/lib_element_mod_bkgd.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_piston_glow1280.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/piston_glow1280.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_active_stack.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/active_stack.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_activity_home.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/xml_accessory_filter.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/xml/accessory_filter.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_divider_vertical.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/divider_vertical.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_activity_spmain_menu.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/activity_spmain_menu.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xhdpi_ic_action_user.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xhdpi/ic_action_user.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_white_light_progress_bar_repeater.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/white_light_progress_bar_repeater.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_account_settings.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_account_settings.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_slider_red_bars_progress.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/slider_red_bars_progress.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_slider_primary_progress.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/slider_primary_progress.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_ic_action_gear.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/ic_action_gear.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_cleaning_cycle_rinse.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/cleaning_cycle_rinse.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_agitation_sliders_modal.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_agitation_sliders_modal.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_sp_slider_modal_progress_bkgd.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/sp_slider_modal_progress_bkgd.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_login.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_login.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_blue_slider_modal_progress_bkgd.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/blue_slider_modal_progress_bkgd.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-ldpi_ic_action_pie_chart.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-ldpi/ic_action_pie_chart.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_seek_thumb_normal.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/seek_thumb_normal.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_library.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_library.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_sp_slider_modal_seek_bar_bkgd.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/sp_slider_modal_seek_bar_bkgd.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_spinner_text_vew.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/spinner_text_vew.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_cleaning_cycle_soap.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/cleaning_cycle_soap.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_edit.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/edit.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_red_slider_handle.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/red_slider_handle.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_drop_smaller_fill_glow1280.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/drop_smaller_fill_glow1280.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_slider_white_bars_progress.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/slider_white_bars_progress.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_drop_small1280.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/drop_small1280.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_stripe_bg.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/stripe_bg.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_warning_dialog.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/warning_dialog.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_thermometer_glow1280.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/thermometer_glow1280.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xhdpi_ic_action_home.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xhdpi/ic_action_home.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_home_crucibles_page.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_home_crucibles_page.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_lib_element_bkgd.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/lib_element_bkgd.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_arrows_glow1280.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/arrows_glow1280.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_slider_large_blue_bars_progress.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/slider_large_blue_bars_progress.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_warning_background.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/warning_background.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_slider_large_red_bars_progress.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/slider_large_red_bars_progress.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_ic_action_blob.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/ic_action_blob.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_blue_light_progress_bar_repeater.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/blue_light_progress_bar_repeater.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_blanking_screen.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_blanking_screen.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_ic_action_book.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/ic_action_book.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_time_slider_indicator.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/time_slider_indicator.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_x1280.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/x1280.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_teal_circle.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/teal_circle.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_red_slider_modal_progress_bkgd.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/red_slider_modal_progress_bkgd.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xhdpi_ic_action_favorites.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xhdpi/ic_action_favorites.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_slider_secondary_progress.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/slider_secondary_progress.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_border_dark.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/border_dark.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_ic_action_book.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/ic_action_book.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_settings_button.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/settings_button.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_text_field_border.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/text_field_border.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_icon_nav.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/icon_nav.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_activity_cleaning_cycle.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/activity_cleaning_cycle.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_settings_locked_crucible.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/settings_locked_crucible.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_slider_primary_progress_blue.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/slider_primary_progress_blue.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_ic_action_document.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/ic_action_document.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_blue_slider_handle.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/blue_slider_handle.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_ic_action_io.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/ic_action_io.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_my_recipes_list_view.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/my_recipes_list_view.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_ag_button.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/ag_button.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_divider_horizontal.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/divider_horizontal.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_recipe_bkgd_layout.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/recipe_bkgd_layout.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_machine_settings.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/machine_settings.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_icon_lock.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/icon_lock.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_red_x.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/red_x.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-ldpi_ic_action_blob.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-ldpi/ic_action_blob.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_bean_gray.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/bean_gray.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_settings_disabled_crucible.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/settings_disabled_crucible.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_alphadominche_large_sheild.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/alphadominche_large_sheild.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_slider_modal.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_slider_modal.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xhdpi_ic_action_pie_chart.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xhdpi/ic_action_pie_chart.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_slider_thumb_layout.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/slider_thumb_layout.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-ldpi_ic_action_user.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-ldpi/ic_action_user.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_content_border.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/content_border.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_sp_slider_modal_secondary_progress.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/sp_slider_modal_secondary_progress.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_slider_primary_progress_green.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/slider_primary_progress_green.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_bean_white.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/bean_white.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_arrow_big_down_glow1280.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/arrow_big_down_glow1280.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_ic_action_bargraph.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/ic_action_bargraph.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_list_chooser_modal.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_list_chooser_modal.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_privacy_settings.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_privacy_settings.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_white_x_on_black.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/white_x_on_black.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_cleaning_cycle.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_cleaning_cycle.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/menu_spmain_menu.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/menu/spmain_menu.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_recipe_list_view_library.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/recipe_list_view_library.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_slider_progress_bg.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/slider_progress_bg.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_favorites_list_view.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/favorites_list_view.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xhdpi_ic_action_info.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xhdpi/ic_action_info.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_cleaning_cycle_settings.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_cleaning_cycle_settings.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_circled_i.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/circled_i.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_ic_action_user.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/ic_action_user.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xhdpi_ic_action_steampunksettings.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xhdpi/ic_action_steampunksettings.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_slider_blue_bars_progress.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/slider_blue_bars_progress.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_sp_slider_modal_progress_drawable.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/sp_slider_modal_progress_drawable.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_ic_action_info.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/ic_action_info.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_ic_action_lock_closed.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/ic_action_lock_closed.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_search_bkgd.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/search_bkgd.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_slider_progress_green.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/slider_progress_green.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_favorites.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_favorites.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_recipe_list_view_favorites.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/recipe_list_view_favorites.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_submit_button_border.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/submit_button_border.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_ag_button_holder_bkgd.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/ag_button_holder_bkgd.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_black_star.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/black_star.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xhdpi_gear_cup_logo.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xhdpi/gear_cup_logo.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_ic_action_gear.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/ic_action_gear.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-ldpi_ic_action_document.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-ldpi/ic_action_document.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_red_light_progress_bar_repeater.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/red_light_progress_bar_repeater.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_trash.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/trash.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_icon_unlock.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/icon_unlock.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_border_light_9.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/border_light_9.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_coffee_text_field_border.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/coffee_text_field_border.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_icon_crucible.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/icon_crucible.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_machine_settings_crucible.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/machine_settings_crucible.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xhdpi_ic_action_gear.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xhdpi/ic_action_gear.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_ic_action_pie_chart.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/ic_action_pie_chart.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_my_recipes.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_my_recipes.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_tea_gray.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/tea_gray.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-ldpi_ic_action_io.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-ldpi/ic_action_io.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_ic_action_blob.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/ic_action_blob.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_small_blue_light_progress_bar_repeater.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/small_blue_light_progress_bar_repeater.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_ic_action_pie_chart.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/ic_action_pie_chart.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_agitation_slider_holder_background.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/agitation_slider_holder_background.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_tea_text_field_border.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/tea_text_field_border.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_cleaning_cycle_line.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/cleaning_cycle_line.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xhdpi_ic_action_blob.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xhdpi/ic_action_blob.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_machine_settings_crucible.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/machine_settings_crucible.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_password_change.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_password_change.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_ic_action_io.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/ic_action_io.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-ldpi_ic_action_book.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-ldpi/ic_action_book.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_country_spinner_text_vew.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/country_spinner_text_vew.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-mdpi_crucible_9_patch.9.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-mdpi/crucible_9_patch.9.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xhdpi_ic_action_io.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xhdpi/ic_action_io.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xhdpi_ic_action_lock_closed.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xhdpi/ic_action_lock_closed.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xhdpi_ic_action_bargraph.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xhdpi/ic_action_bargraph.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xhdpi_ic_action_book.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xhdpi/ic_action_book.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_slider_progress.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/slider_progress.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_machine_settings.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_machine_settings.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_slider_progress_blue.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/slider_progress_blue.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_pin_modal.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_pin_modal.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_my_recipes_list_view.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/my_recipes_list_view.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/menu_tea_recipe_editor.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/menu/tea_recipe_editor.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/layout_sp_network_error_modal.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/layout/sp_network_error_modal.xml"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-xhdpi_ic_action_tearecipe.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-xhdpi/ic_action_tearecipe.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-hdpi_modal_slider_up_arrow.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-hdpi/modal_slider_up_arrow.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_main_menu_horizontal_divider.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/main_menu_horizontal_divider.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable-ldpi_ic_action_gear.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable-ldpi/ic_action_gear.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_settings_unlocked_crucible.png.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/settings_unlocked_crucible.png"
+    },
+    {
+        "merged": "com.alphadominche.steampunkhmi.app-debug-8:/drawable_time_slider_progress.xml.flat",
+        "source": "com.alphadominche.steampunkhmi.app-main-10:/drawable/time_slider_progress.xml"
+    }
+]

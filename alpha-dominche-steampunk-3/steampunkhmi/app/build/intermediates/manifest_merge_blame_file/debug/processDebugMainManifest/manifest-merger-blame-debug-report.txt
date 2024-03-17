@@ -1,0 +1,420 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.alphadominche.steampunkhmi"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="17"
+9        android:targetSdkVersion="19" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:3:5-67
+11-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:3:22-64
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:4:5-81
+12-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:4:22-78
+13    <uses-permission android:name="android.permission.BLUETOOTH" />
+13-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:5:5-68
+13-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:5:22-65
+14
+15    <permission
+15-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:7:5-10:18
+16        android:name="com.alphadominche.STEAM_PUNK_CONTROL"
+16-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:8:9-60
+17        android:label="flow_meter_permission" >
+17-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:9:9-46
+18    </permission>
+19
+20    <uses-permission android:name="com.alphadominche.STEAM_PUNK_CONTROL" />
+20-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:12:5-76
+20-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:12:22-73
+21    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+21-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:13:5-80
+21-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:13:22-78
+22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+22-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:14:5-78
+22-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:14:22-76
+23
+24    <application
+24-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:16:5-209:19
+25        android:allowBackup="true"
+25-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:17:9-35
+26        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+26-->[com.android.support:support-compat:28.0.0] /Users/samuelstoltzfus/.gradle/caches/transforms-3/5b8da9f19eb3e14eed504567415fc3c7/transformed/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+27        android:debuggable="true"
+28        android:extractNativeLibs="true"
+29        android:icon="@drawable/ad_mincher_logo"
+29-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:18:9-49
+30        android:label="@string/app_name"
+30-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:19:9-41
+31        android:testOnly="true"
+32        android:theme="@style/AppTheme" >
+32-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:20:9-40
+33        <uses-library
+33-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:22:9-131
+34            android:name="com.android.future.usb.accessory"
+34-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:22:23-70
+35            android:protectionLevel="normal"
+35-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:22:96-128
+36            android:required="false" />
+36-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:22:71-95
+37
+38        <service
+38-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:24:9-39:19
+39            android:name="com.alphadominche.steampunkhmi.SPIOIOService"
+39-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:25:13-72
+40            android:exported="false" >
+40-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:26:13-37
+41
+42            <!--
+43            <intent-filter>
+44	            <action android:name="com.alphadominche.steampunkhmi.SP_IOIO_SERVICE_INTENT" />
+45	        </intent-filter>
+46            -->
+47            <intent-filter>
+47-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:33:13-38:29
+48                <action android:name="START_SPIOIO_SERVICE" />
+48-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:34:17-63
+48-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:34:25-60
+49                <action android:name="CRUCIBLE_COMMAND" />
+49-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:35:17-59
+49-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:35:25-56
+50                <action android:name="MACHINE_COMMAND" />
+50-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:36:17-58
+50-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:36:25-55
+51                <action android:name="MANUAL_MODE_COMMAND" />
+51-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:37:17-62
+51-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:37:25-59
+52            </intent-filter>
+53        </service>
+54        <service
+54-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:41:9-44:19
+55            android:name="com.alphadominche.steampunkhmi.SPUpdateService"
+55-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:42:13-44
+56            android:label="Update Service" >
+56-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:43:13-43
+57        </service>
+58
+59        <activity
+59-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:46:9-67:20
+60            android:name="com.alphadominche.steampunkhmi.SPCruciblesActivity"
+60-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:47:13-78
+61            android:configChanges="orientation|keyboardHidden"
+61-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:52:13-63
+62            android:label="@string/home_crucibles_title_text"
+62-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:48:13-62
+63            android:launchMode="singleTask"
+63-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:50:13-44
+64            android:screenOrientation="sensorPortrait"
+64-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:51:13-55
+65            android:windowSoftInputMode="stateAlwaysHidden" >
+65-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:49:13-60
+66            <intent-filter>
+66-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:54:13-59:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:55:17-69
+67-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:55:25-66
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:56:17-77
+69-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:56:27-74
+70                <category android:name="android.intent.category.HOME" />
+70-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:57:17-73
+70-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:57:27-70
+71                <category android:name="android.intent.category.DEFAULT" />
+71-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:58:17-76
+71-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:58:27-73
+72            </intent-filter>
+73            <intent-filter>
+73-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:61:13-63:29
+74                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+74-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:62:17-93
+74-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:62:25-90
+75            </intent-filter>
+76
+77            <meta-data
+77-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:64:13-66:60
+78                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+78-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:65:17-82
+79                android:resource="@xml/accessory_filter" />
+79-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:66:17-57
+80        </activity>
+81
+82        <receiver
+82-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:69:9-85:20
+83            android:name="com.alphadominche.steampunkhmi.SPServiceReceiver"
+83-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:70:13-76
+84            android:enabled="true"
+84-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:71:13-35
+85            android:exported="false"
+85-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:72:13-37
+86            android:permission="com.alphadominche.STEAMPUNK_CONTROL" >
+86-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:73:13-69
+87            <intent-filter>
+87-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:74:13-84:29
+88                <action android:name="CRUCIBLE_STATUS" />
+88-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:75:17-58
+88-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:75:25-55
+89                <action android:name="BOILER_STATUS" />
+89-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:76:17-56
+89-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:76:25-53
+90                <action android:name="MACHINE_SETTINGS_STATUS" />
+90-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:77:17-66
+90-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:77:25-63
+91                <action android:name="MACHINE_SETTINGS_REQUEST" />
+91-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:78:17-67
+91-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:78:25-64
+92                <action android:name="STEAMPUNK_ERROR_BROADCAST" />
+92-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:79:17-68
+92-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:79:25-65
+93                <action android:name="RELEASE_STEAM_BROADCAST" />
+93-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:80:17-66
+93-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:80:25-63
+94                <action android:name="IOIO_CONNECTED_BROADCAST" />
+94-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:81:17-67
+94-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:81:25-64
+95                <action android:name="NETWORK_CONNECTED_BROADCAST" />
+95-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:82:17-70
+95-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:82:25-67
+96                <action android:name="NETWORK_NOT_CONNECTED_BROADCAST" />
+96-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:83:17-74
+96-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:83:25-71
+97            </intent-filter>
+98        </receiver>
+99        <receiver android:name="com.alphadominche.steampunkhmi.SPPowerPlugReceiver" >
+99-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:87:9-93:20
+99-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:88:13-78
+100            <intent-filter>
+100-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:89:13-92:29
+101                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+101-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:90:17-87
+101-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:90:25-84
+102                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+102-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:91:17-90
+102-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:91:25-87
+103            </intent-filter>
+104        </receiver>
+105
+106        <activity
+106-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:95:9-108:20
+107            android:name="com.alphadominche.steampunkhmi.SPLibraryActivity"
+107-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:96:13-76
+108            android:configChanges="orientation|keyboardHidden"
+108-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:101:13-63
+109            android:label="@string/library_title_text"
+109-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:97:13-55
+110            android:launchMode="singleTop"
+110-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:99:13-43
+111            android:screenOrientation="sensorPortrait"
+111-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:100:13-55
+112            android:windowSoftInputMode="stateHidden" >
+112-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:98:13-54
+113            <meta-data
+113-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:103:13-104:61
+114                android:name="android.app.searchable"
+114-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:103:24-61
+115                android:resource="@xml/searchable" />
+115-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:104:24-58
+116
+117            <intent-filter>
+117-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:105:13-107:29
+118                <action android:name="android.intent.action.SEARCH" />
+118-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:106:17-71
+118-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:106:25-68
+119            </intent-filter>
+120        </activity>
+121        <activity
+121-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:109:9-115:20
+122            android:name="com.alphadominche.steampunkhmi.SPRecipeEditorActivity"
+122-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:110:13-81
+123            android:configChanges="orientation|keyboardHidden"
+123-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:114:13-63
+124            android:label="@string/title_activity_tea_recipe_editor"
+124-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:111:13-69
+125            android:screenOrientation="sensorPortrait"
+125-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:113:13-55
+126            android:windowSoftInputMode="stateHidden" >
+126-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:112:13-54
+127        </activity>
+128        <activity
+128-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:116:9-122:20
+129            android:name="com.alphadominche.steampunkhmi.SPActivity"
+129-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:117:13-69
+130            android:configChanges="orientation|keyboardHidden"
+130-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:121:13-63
+131            android:label="@string/title_activity_spactivity"
+131-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:118:13-62
+132            android:screenOrientation="sensorPortrait"
+132-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:120:13-55
+133            android:windowSoftInputMode="stateHidden" >
+133-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:119:13-54
+134        </activity>
+135        <activity
+135-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:123:9-129:20
+136            android:name="com.alphadominche.steampunkhmi.MainMenuMockup"
+136-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:124:13-73
+137            android:configChanges="orientation|keyboardHidden"
+137-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:128:13-63
+138            android:label="@string/title_activity_main_menu_mockup"
+138-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:126:13-68
+139            android:screenOrientation="sensorPortrait"
+139-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:127:13-55
+140            android:windowSoftInputMode="stateHidden" >
+140-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:125:13-54
+141        </activity>
+142        <activity
+142-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:130:9-136:20
+143            android:name="com.alphadominche.steampunkhmi.SPMachineSettingsActivity"
+143-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:131:13-84
+144            android:configChanges="orientation|keyboardHidden"
+144-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:135:13-63
+145            android:label="@string/machine_settings_title_text"
+145-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:133:13-64
+146            android:screenOrientation="sensorPortrait"
+146-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:134:13-55
+147            android:windowSoftInputMode="stateHidden" >
+147-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:132:13-54
+148        </activity>
+149        <activity
+149-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:137:9-143:20
+150            android:name="com.alphadominche.steampunkhmi.SPAccountSettingsActivity"
+150-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:138:13-84
+151            android:configChanges="orientation|keyboardHidden"
+151-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:142:13-63
+152            android:label="@string/account_settings_title_text"
+152-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:140:13-64
+153            android:screenOrientation="sensorPortrait"
+153-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:141:13-55
+154            android:windowSoftInputMode="stateAlwaysHidden" >
+154-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:139:13-60
+155        </activity>
+156        <activity
+156-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:144:9-150:20
+157            android:name="com.alphadominche.steampunkhmi.SPPrivacySettingsActivity"
+157-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:145:13-84
+158            android:configChanges="orientation|keyboardHidden"
+158-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:149:13-63
+159            android:label="@string/privacy_settings_title_text"
+159-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:147:13-64
+160            android:screenOrientation="sensorPortrait"
+160-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:148:13-55
+161            android:windowSoftInputMode="stateHidden" >
+161-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:146:13-54
+162        </activity>
+163        <activity
+163-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:151:9-157:20
+164            android:name="com.alphadominche.steampunkhmi.SPTermsActivity"
+164-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:152:13-74
+165            android:configChanges="orientation|keyboardHidden"
+165-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:156:13-63
+166            android:label="@string/terms_and_policies_title_text"
+166-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:154:13-66
+167            android:screenOrientation="sensorPortrait"
+167-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:155:13-55
+168            android:windowSoftInputMode="stateHidden" >
+168-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:153:13-54
+169        </activity>
+170        <activity
+170-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:158:9-173:20
+171            android:name="com.alphadominche.steampunkhmi.SPLoginActivity"
+171-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:159:13-74
+172            android:configChanges="orientation|keyboardHidden"
+172-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:166:13-63
+173            android:excludeFromRecents="true"
+173-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:161:13-46
+174            android:label="@string/app_name"
+174-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:160:13-45
+175            android:launchMode="singleTop"
+175-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:164:13-43
+176            android:noHistory="true"
+176-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:162:13-37
+177            android:screenOrientation="sensorPortrait"
+177-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:165:13-55
+178            android:windowSoftInputMode="stateHidden" >
+178-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:163:13-54
+179
+180            <!-- <intent-filter> -->
+181            <!-- <action android:name="android.intent.action.MAIN" /> -->
+182            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+183            <!-- <category android:name="android.intent.category.HOME" /> -->
+184            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+185            <!-- </intent-filter> -->
+186        </activity>
+187        <activity
+187-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:174:9-179:20
+188            android:name="com.alphadominche.steampunkhmi.SPCleaningCycleActivity"
+188-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:175:13-82
+189            android:configChanges="orientation|keyboardHidden"
+189-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:178:13-63
+190            android:label="@string/cleaning_cycle_title_text"
+190-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:176:13-62
+191            android:screenOrientation="sensorPortrait" >
+191-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:177:13-55
+192        </activity>
+193        <activity
+193-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:180:9-185:20
+194            android:name="com.alphadominche.steampunkhmi.SPCleaningCycleSettingsActivity"
+194-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:181:13-90
+195            android:configChanges="orientation|keyboardHidden"
+195-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:184:13-63
+196            android:label="@string/cleaning_cycle_settings_title_text"
+196-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:182:13-71
+197            android:screenOrientation="sensorPortrait" >
+197-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:183:13-55
+198        </activity>
+199        <activity
+199-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:186:9-191:20
+200            android:name="com.alphadominche.steampunkhmi.SPFavoritesActivity"
+200-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:187:13-78
+201            android:configChanges="orientation|keyboardHidden"
+201-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:190:13-63
+202            android:label="@string/favorites_title_text"
+202-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:188:13-57
+203            android:screenOrientation="sensorPortrait" >
+203-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:189:13-55
+204        </activity>
+205        <activity
+205-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:192:9-197:20
+206            android:name="com.alphadominche.steampunkhmi.SPMyRecipesActivity"
+206-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:193:13-78
+207            android:configChanges="orientation|keyboardHidden"
+207-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:196:13-63
+208            android:label="@string/my_recipes_title_text"
+208-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:194:13-58
+209            android:screenOrientation="sensorPortrait" >
+209-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:195:13-55
+210        </activity>
+211        <activity
+211-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:198:9-203:20
+212            android:name="com.alphadominche.steampunkhmi.SPSwitchboardActivity"
+212-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:199:13-80
+213            android:configChanges="orientation|keyboardHidden"
+213-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:202:13-63
+214            android:label="@string/switchboard_title_text"
+214-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:200:13-59
+215            android:screenOrientation="sensorPortrait" >
+215-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:201:13-55
+216        </activity>
+217
+218        <service
+218-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:204:9-171
+219            android:name="com.alphadominche.steampunkhmi.restclient.presistenceservice.PersistenceService"
+219-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:204:18-112
+220            android:enabled="true"
+220-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:204:113-135
+221            android:exported="false" />
+221-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:204:136-160
+222
+223        <provider
+223-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:205:9-208:20
+224            android:name="com.alphadominche.steampunkhmi.contentprovider.Provider"
+224-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:205:19-89
+225            android:authorities="com.alphadominche.steampunkhmi.provider.HomeActivity"
+225-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:206:19-93
+226            android:exported="false" >
+226-->/Users/samuelstoltzfus/Developer/Android Studio/alpha-dominche-steampunk/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/AndroidManifest.xml:207:19-43
+227        </provider>
+228    </application>
+229
+230</manifest>

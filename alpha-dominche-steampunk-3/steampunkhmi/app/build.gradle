@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "21.1.2"
+    namespace "com.alphadominche.steampunkhmi"
+    compileSdkVersion 34
 
     defaultConfig {
         applicationId "com.alphadominche.steampunkhmi"
@@ -17,18 +17,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    buildToolsVersion '34.0.0'
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.google.android.gms:play-services-maps:7.8.0'
-    compile 'com.android.support:appcompat-v7:19.0.0'
-    compile "com.android.support:support-v4:19.0.0"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation 'com.google.android.gms:play-services-maps:7.8.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation "com.android.support:support-v4:28.0.0"
 
-    compile 'com.squareup.retrofit:retrofit:1.2.0'
-    compile 'de.greenrobot:eventbus:2.4.0'
+    implementation 'com.squareup.retrofit:retrofit:1.2.0'
+    implementation 'de.greenrobot:eventbus:2.4.0'
 
-    compile files('libs/ioiolibandroid.jar')
-    compile files('libs/ioiolibbt.jar')
-    compile files('libs/ioiolibaccessory.jar')
+    implementation files('libs/ioiolibandroid.jar')
+    implementation files('libs/ioiolibbt.jar')
+    implementation files('libs/ioiolibaccessory.jar')
 }
