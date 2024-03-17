@@ -1,0 +1,234 @@
+[
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/ag_button.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/ag_button.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/activity_library.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/activity_library.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_library.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_library.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_agitation_sliders_modal.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_agitation_sliders_modal.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/activity_cleaning_cycle.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/activity_cleaning_cycle.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_password_change.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_password_change.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/my_recipes_list_view.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/my_recipes_list_view.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_action_bar_decor_overlay.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_action_bar_decor_overlay.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/agitation_graphic.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/agitation_graphic.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_favorites.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_favorites.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/library_recipe_name_view.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/library_recipe_name_view.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_list_chooser_modal.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_list_chooser_modal.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/activity_manual_mode.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/activity_manual_mode.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_slider_modal.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_slider_modal.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_pin_modal.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_pin_modal.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_action_bar_tabbar.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_action_bar_tabbar.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/machine_settings_crucible.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/machine_settings_crucible.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_my_recipes.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_my_recipes.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_cleaning_cycle_settings.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_cleaning_cycle_settings.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_account_settings.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_account_settings.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_home_crucibles_page.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_home_crucibles_page.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/country_spinner_text_vew.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/country_spinner_text_vew.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/edit_notes.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/edit_notes.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_terms_and_policies.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_terms_and_policies.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_include.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_activity_chooser_view_include.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_action_bar_decor_include.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_action_bar_decor_include.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_cleaning_cycle.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_cleaning_cycle.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_action_bar_home.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_action_bar_home.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/spinner_text_vew.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/spinner_text_vew.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/activity_home.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/activity_home.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_machine_settings.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_machine_settings.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/roaster_list_textview.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/roaster_list_textview.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_action_mode_close_item.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_pw_reset_modal.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_pw_reset_modal.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_network_error_modal.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_network_error_modal.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/activity_spmain_menu.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/activity_spmain_menu.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_action_bar_tab.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_action_bar_tab.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_blanking_screen.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_blanking_screen.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_recipe_editor.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_recipe_editor.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_login.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_login.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_crucible_modal.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_crucible_modal.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/warning_dialog.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/warning_dialog.xml"
+    },
+    {
+        "merged": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/build/intermediates/res/merged/debug/layout/sp_privacy_settings.xml",
+        "source": "/Users/guy/LocalProjects/AlphaDominche/alpha-dominche-steampunk-3/steampunkhmi/app/src/main/res/layout/sp_privacy_settings.xml"
+    }
+]

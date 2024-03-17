@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Library" >
+
+	<FrameLayout
+	    android:id="@+id/layout_wrapper"
+	    android:layout_width="920dp"
+	    android:layout_height="match_parent"
+	    android:layout_marginLeft="-320.5dp"
+	    >
+	    <FrameLayout 
+	        android:layout_marginLeft="320dp"
+	        android:layout_width="600dp"
+	        android:layout_height="match_parent"
+	        >
+	    
+		    <LinearLayout
+		        android:id="@+id/layout"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:background="@drawable/recipe_bkgd"
+		        android:orientation="vertical"
+		        android:paddingLeft="@dimen/recipe_top_box_side_margins"
+		        android:paddingRight="@dimen/recipe_top_box_side_margins" >
+		
+		        <LinearLayout
+		            android:id="@+id/title_bar"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content" >
+		
+		            <ImageView
+		                android:id="@+id/menu_button"
+		                android:layout_width="50dp"
+		                android:layout_height="match_parent"
+		                android:src="@drawable/menu_btn" />
+		
+		            <TextView
+		                android:id="@+id/layout_title"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:layout_weight="1"
+		                android:gravity="center_vertical|center_horizontal"
+		                android:text="@string/library_title_text"
+		                android:textAlignment="gravity"
+		                android:textAppearance="?android:attr/textAppearanceLarge"
+		                android:textColor="@color/white"
+		                android:textSize="@dimen/recipe_editor_title_text_height" />
+		
+		            <ImageView
+		                android:id="@+id/machine_settings_button"
+		                android:layout_width="50dp"
+		                android:layout_height="match_parent"
+		                android:src="@drawable/machine_settings" />
+		
+		        </LinearLayout>
+		        <LinearLayout 
+		            android:id="@+id/body_columns"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:paddingTop="25dp">
+		            
+		        <LinearLayout
+		            android:id="@+id/search_column"
+		            android:layout_width="210dp"
+		            android:layout_height="wrap_content" 
+		            android:orientation="vertical"
+		            >
+
+		            <SearchView
+		                android:id="@+id/library_search_bar"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="-23dp"
+		                android:gravity="left|center_vertical" >
+		            </SearchView>
+					<ListView
+			            android:id="@+id/search_list"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:gravity="left|center_vertical" >
+		            
+		        	</ListView >
+		        </LinearLayout>
+				<LinearLayout 
+				    android:id="@+id/search_column"
+		            android:layout_width="320dp"
+		            android:layout_height="wrap_content" 
+		            android:orientation="vertical">
+				        <LinearLayout
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:layout_marginLeft="20dp" >
+					        <TextView
+					            android:id="@+id/roaster_name"
+					            android:layout_width="match_parent"
+					            android:layout_height="50dp"
+					    		android:textColor="@color/white" 
+					    		android:text="@string/default_library_list_title_text"
+					            android:textAppearance="?android:attr/textAppearanceMedium"
+					            android:gravity = "left">
+					        </TextView >
+					        
+				        </LinearLayout>
+		        <ListView
+		            android:id="@+id/library_list_recipes"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:gravity="right|center_vertical">
+		            
+		        </ListView >
+
+		        <Button
+		            android:id="@+id/subscribe_button"
+		            style="?android:attr/buttonStyleSmall"
+		            android:layout_width="200dp"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_horizontal"
+		            android:layout_marginTop="40dp"
+		            android:background="@drawable/submit_button_border"
+		            android:textColor="@color/white"
+		            android:text="@string/subscribe_to"
+		            android:visibility="gone"/>
+
+		        </LinearLayout>
+		        </LinearLayout>
+	        </LinearLayout>
+	        
+	   	</FrameLayout>
+	</FrameLayout>
+	  
+</RelativeLayout>

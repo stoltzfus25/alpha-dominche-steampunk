@@ -1,0 +1,6 @@
+django-extensions==1.1.1
+pygraphviz==1.1
+django_webtest
+
+# in order to install pygraphviz successfully you need graphviz and it's developement version graphviz-dev installed successfully
+# the command in linux ubuntu that worked for me was sudo apt-get install graphviz graphviz-dev

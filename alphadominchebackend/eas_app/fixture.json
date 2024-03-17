@@ -1,0 +1,116 @@
+[
+	{
+	    "pk": 1, 
+	    "model": "auth.user", 
+	    "fields": {
+	        "username": "test", 
+	        "first_name": "", 
+	        "last_name": "", 
+	        "is_active": true, 
+	        "is_superuser": true, 
+	        "is_staff": true, 
+	        "last_login": "2013-10-30T18:51:26.195Z", 
+	        "groups": [], 
+	        "user_permissions": [], 
+	        "password": "pbkdf2_sha256$10000$WbuuxCPz8OKo$ZLIcm17fGhT73yCNbUCB9/NKvo1xhV91sNMC559aQHM=", 
+	        "email": "", 
+	        "date_joined": "2013-10-30T18:51:01.666Z"
+	    }
+	},
+	{
+		"model": "eas_app.Capability",
+		"pk": 1,
+		"fields": {
+			"description": "Testing Capability",
+			"requires": "Something"
+		}
+	},
+	{
+		"model": "eas_app.Owner",
+		"pk": 1,
+		"fields": {
+			"name": "Test Owner",
+			"description": "Testing Description"
+		}
+	},
+	{
+		"model": "eas_app.App",
+		"pk": 1,
+		"fields": {
+			"name": "Test App",
+			"description": "Testing App",
+			"owner": 1
+		}
+	},
+	{
+		"model": "eas_app.Platform",
+		"pk": 1,
+		"fields": {
+			"name": "Test Platform",
+			"description": "Testing Platform"
+		}
+	},
+	{
+		"model": "eas_app.Device",
+		"pk": 1,
+		"fields": {
+			"name": "Test Device",
+			"platform": 1,
+			"capabilities": [1]
+		}
+	},
+	{
+		"model": "eas_app.DeviceInstance",
+		"pk": 1,
+		"fields": {
+			"user": 1,
+			"device": 1
+		}
+	},
+	{
+		"model": "eas_app.Version",
+		"pk": 1,
+		"fields": {
+			"application": 1,
+			"platform": 1,
+			"version": "1.1",
+			"build": "v1",
+			"description": "Testing Version",
+			"date": "2013-01-01",
+			"req_capabilities": 1
+		}
+	},
+	{
+		"model": "eas_app.Version",
+		"pk": 2,
+		"fields": {
+			"application": 1,
+			"platform": 1,
+			"version": "1.2",
+			"build": "v2",
+			"description": "Testing Version",
+			"date": "2013-01-01",
+			"req_capabilities": 1
+		}
+	},
+	{
+		"model": "eas_app.Install",
+		"pk": 1,
+		"fields": {
+			"device": 1,
+			"version": 1,
+			"date_installed": "2013-01-01",
+			"downloaded": true
+		}
+	},
+	{
+		"model": "eas_app.App",
+		"pk": 1,
+		"fields": {
+			"name": "Test App",
+			"description": "Testing App",
+			"owner": 1,
+			"current_version": 1
+		}
+	}
+]

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="outer_home_screen_row_count">3</integer>
+    <integer name="outer_home_screen_column_count">1</integer>
+    <integer name="home_activity_crucible_view_row_count">3</integer>
+    <integer name="home_activity_crucible_view_column_count">3</integer>
+</resources>

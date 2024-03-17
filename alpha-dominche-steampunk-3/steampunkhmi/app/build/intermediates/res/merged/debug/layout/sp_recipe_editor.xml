@@ -1,0 +1,930 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teaRecipeLayoutHolder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SPRecipeEditorActivity" >
+
+    <LinearLayout
+        android:id="@+id/teaRecipeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/recipe_bkgd"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/recipe_top_box_side_margins"
+        android:paddingRight="@dimen/recipe_top_box_side_margins" >
+
+        <LinearLayout
+            android:id="@+id/teaRecipeTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/save_button"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@android:drawable/ic_menu_save" />
+
+            <TextView
+                android:id="@+id/teaRecipeLayoutTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/recipe_editor_title_text"
+                android:textAlignment="gravity"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="@dimen/recipe_editor_title_text_height" />
+
+            <ImageView
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/x1280" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/teaRecipeLayoutTopHalf"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="20dp" >
+            
+            <!-- coffee -->
+            <FrameLayout
+                android:id="@+id/coffeeRecipeLayoutGeneralInfoHolder"
+                android:layout_width="274dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/recipe_top_box_inner_margin"
+                android:background="@drawable/content_border"
+                android:paddingBottom="@dimen/recipe_editor_upper_boxes_vertical_padding"
+                android:paddingLeft="@dimen/recipe_editor_upper_boxes_side_padding"
+                android:paddingRight="@dimen/recipe_editor_upper_boxes_side_padding"
+                android:paddingTop="@dimen/recipe_editor_upper_boxes_vertical_padding" >
+
+                <TextView
+                    android:id="@+id/coffeeRecipeProducerLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_recipe_producer_label"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/gray_label_color"
+                    android:textSize="@dimen/title_label_text_height" />
+
+                <EditText
+                    android:id="@+id/coffeeRecipeNameField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/recipe_name_label_top"
+                    android:background="@drawable/coffee_text_field_border"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textCursorDrawable="@null"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:text="@string/coffee_recipe_name_field_default_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/recipe_name_field_text_height" >
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/coffeeRecipeGrindLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/recipe_filter_label_top"
+                    android:text="@string/coffee_recipe_grind_label_text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/gray_label_color"
+                    android:textSize="@dimen/title_label_text_height" />
+				 <FrameLayout
+                    android:id="@+id/coffeeRecipeGrindHolder"
+                    android:layout_width="@dimen/recipe_float_field_width"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/recipe_editor_filter_spinner_top"
+                    android:background="@drawable/text_field_border" >
+
+                <TextView
+                    android:id="@+id/coffeeRecipeGrindField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:text="2.45"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/recipe_name_field_text_height" />
+                <SeekBar
+                    android:id="@+id/teaRecipeGrindSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="10"
+                    android:background="@drawable/time_slider_bkgd"
+                    android:progressDrawable="@drawable/time_slider_progress"
+                    android:thumb="@drawable/time_slider_indicator" 
+                    android:visibility="gone"/>
+                </FrameLayout>
+                
+
+                <TextView
+                    android:id="@+id/coffeeRecipeFilterLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/coffee_recipe_filter_label_top"
+                    android:text="@string/coffee_recipe_filter_label_text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/gray_label_color"
+                    android:textSize="@dimen/title_label_text_height" />
+
+                <Spinner
+                    android:id="@+id/coffeeRecipeFilterChooser"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/filter_height"
+                    android:layout_marginTop="@dimen/coffee_recipe_editor_filter_spinner_top"
+                    android:background="@drawable/text_field_border"
+                    android:entries="@array/coffee_filter_types"
+                    android:prompt="@string/filter_spinner_title"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/coffeeRecipeGramsLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/recipe_tsp_label_top"
+                    android:text="@string/coffee_recipe_grams_label_text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/gray_label_color"
+                    android:textSize="@dimen/title_label_text_height" />
+
+                <TextView
+                    android:id="@+id/coffeeRecipeGramsField"
+                    android:layout_width="@dimen/recipe_float_field_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/recipe_tsp_field_top"
+                    android:background="@drawable/text_field_border"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/coffee_recipe_grams_field_default_value"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/recipe_name_field_text_height" >
+
+                </TextView>
+
+            </FrameLayout>
+            
+            <!-- tea -->
+            <FrameLayout
+                android:id="@+id/teaRecipeLayoutGeneralInfoHolder"
+                android:layout_width="274dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/recipe_top_box_inner_margin"
+                android:background="@drawable/content_border"
+                android:paddingBottom="@dimen/recipe_editor_upper_boxes_vertical_padding"
+                android:paddingLeft="@dimen/recipe_editor_upper_boxes_side_padding"
+                android:paddingRight="@dimen/recipe_editor_upper_boxes_side_padding"
+                android:paddingTop="@dimen/recipe_editor_upper_boxes_vertical_padding"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/teaRecipeProducerLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tea_recipe_producer_label"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/gray_label_color"
+                    android:textSize="@dimen/title_label_text_height" />
+
+                <EditText
+                    android:id="@+id/teaRecipeNameField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/recipe_name_label_top"
+                    android:background="@drawable/tea_text_field_border"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textCursorDrawable="@null"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:text="@string/tea_recipe_name_field_default_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/recipe_name_field_text_height" >
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/teaRecipeFilterLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/recipe_filter_label_top"
+                    android:text="@string/tea_recipe_filter_label_text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/gray_label_color"
+                    android:textSize="@dimen/title_label_text_height" />
+
+                <Spinner
+                    android:id="@+id/teaRecipeFilterChooser"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/filter_height"
+                    android:layout_marginTop="@dimen/recipe_editor_filter_spinner_top"
+                    android:background="@drawable/text_field_border"
+                    android:entries="@array/tea_filter_types"
+                    android:prompt="@string/filter_spinner_title"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/teaRecipeGramsLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/recipe_grams_label_top"
+                    android:text="@string/tea_recipe_grams_label_text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/gray_label_color"
+                    android:textSize="@dimen/title_label_text_height" />
+
+                <TextView
+                    android:id="@+id/teaRecipeGramsField"
+                    android:layout_width="@dimen/recipe_float_field_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/recipe_grams_field_top"
+                    android:background="@drawable/text_field_border"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/tea_recipe_grams_field_default_value"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/recipe_name_field_text_height" >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/teaRecipeTeaspoonLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/recipe_tsp_label_top"
+                    android:text="@string/tea_recipe_tsp_label_text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/gray_label_color"
+                    android:textSize="@dimen/title_label_text_height" />
+
+                <TextView
+                    android:id="@+id/teaRecipeTeaspoonField"
+                    android:layout_width="@dimen/recipe_float_field_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/recipe_tsp_field_top"
+                    android:background="@drawable/text_field_border"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/tea_recipe_tsp_field_default_value"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/recipe_name_field_text_height" >
+
+                </TextView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/teaRecipeTempAndVolumeHolder"
+                android:layout_width="275dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/recipe_top_box_inner_margin"
+                android:background="@drawable/content_border" >
+                
+                <SeekBar
+                    android:id="@+id/recipe_temp_slider"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-42dp"
+                    android:layout_marginTop="90dp"
+                    android:background="@drawable/slider_border"
+                    android:max="92"
+                    android:maxHeight="45dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/slider_red_bars_progress"
+                    android:rotation="270"
+                    android:secondaryProgress="0"
+                    android:thumb="@drawable/sp_slider_modal_thumb"
+                    android:thumbOffset="8dp" />
+
+                <TextView
+                    android:id="@+id/teaRecipeTempMaxLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/recipe_temp_extent_label_left"
+                    android:layout_marginTop="@dimen/recipe_temp_max_label_top"
+                    android:text="@string/tea_recipe_max_temp_text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/gray_label_color"
+                    android:textSize="@dimen/recipe_small_label_text_height" />
+
+                <TextView
+                    android:id="@+id/teaRecipeTempMinLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/recipe_temp_extent_label_left"
+                    android:layout_marginTop="@dimen/recipe_temp_min_label_top"
+                    android:text="@string/tea_recipe_min_temp_text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/gray_label_color"
+                    android:textSize="@dimen/recipe_small_label_text_height" />
+
+                <TextView
+                    android:id="@+id/twaRecipeTempLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/recipe_temp_label_left"
+                    android:layout_marginTop="@dimen/recipe_temp_label_top"
+                    android:text="@string/tea_recipe_temp_label_text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/gray_label_color"
+                    android:textSize="@dimen/slider_label_text_height" />
+				
+				<SeekBar
+				    android:id="@+id/recipe_volume_slider"
+				    android:layout_width="220dp"
+				    android:layout_height="wrap_content"
+				    android:layout_marginLeft="80dp"
+				    android:layout_marginTop="90dp"
+				    android:background="@drawable/slider_border"
+				    android:max="16"
+				    android:maxHeight="45dp"
+				    android:paddingBottom="5dp"
+				    android:paddingLeft="5dp"
+				    android:paddingRight="5dp"
+				    android:paddingTop="5dp"
+				    android:progress="0"
+				    android:progressDrawable="@drawable/slider_blue_bars_progress"
+				    android:rotation="270"
+				    android:secondaryProgress="0"
+				    android:thumb="@drawable/sp_slider_modal_thumb"
+				    android:thumbOffset="8dp" />
+				
+				<TextView
+				    android:id="@+id/teaRecipeVolumeMaxLabel"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginLeft="@dimen/recipe_vol_extent_label_left"
+				    android:layout_marginTop="@dimen/recipe_vol_max_label_top"
+				    android:text="@string/tea_recipe_max_vol_text"
+				    android:textAppearance="?android:attr/textAppearanceLarge"
+				    android:textColor="@color/gray_label_color"
+				    android:textSize="@dimen/recipe_small_label_text_height" />
+				
+				<TextView
+				    android:id="@+id/teaRecipeVolumeMinLabel"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginLeft="@dimen/recipe_vol_extent_label_left"
+				    android:layout_marginTop="@dimen/recipe_vol_min_label_top"
+				    android:text="@string/tea_recipe_min_vol_text"
+				    android:textAppearance="?android:attr/textAppearanceLarge"
+				    android:textColor="@color/gray_label_color"
+				    android:textSize="@dimen/recipe_small_label_text_height" />
+				
+				<TextView
+				    android:id="@+id/teaRecipeVolumeLabel"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginLeft="@dimen/recipe_vol_label_left"
+				    android:layout_marginTop="@dimen/recipe_vol_label_top"
+				    android:text="@string/tea_recipe_vol_label_text"
+				    android:textAppearance="?android:attr/textAppearanceLarge"
+				    android:textColor="@color/gray_label_color"
+				    android:textSize="@dimen/slider_label_text_height" />
+
+				<FrameLayout
+				    android:id="@+id/teaRecipeTempInfo"
+				    android:layout_width="@dimen/recipeInfoBoxWidth"
+				    android:layout_height="@dimen/recipeInfoBoxHeight"
+				    android:layout_marginLeft="@dimen/recipe_temp_info_left"
+				    android:layout_marginTop="@dimen/recipe_info_box_top"
+				    android:background="@drawable/text_field_border" >
+
+					<TextView
+					    android:id="@+id/teaRecipeTempValueLabel"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:gravity="right"
+					    android:text="185º"
+					    android:textAppearance="?android:attr/textAppearanceLarge"
+					    android:textColor="@color/white"
+					    android:textSize="@dimen/recipe_name_field_text_height" />
+
+					<TextView
+					    android:id="@+id/teaRecipeTempUnitsLabel"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_marginLeft="85dp"
+					    android:layout_marginTop="@dimen/recipe_info_box_units_label_top"
+					    android:gravity="right"
+					    android:text="f"
+					    android:textAlignment="gravity"
+					    android:textAppearance="?android:attr/textAppearanceLarge"
+					    android:textColor="@color/gray_label_color"
+					    android:textSize="@dimen/recipe_small_label_text_height" />
+
+				</FrameLayout>
+
+				<FrameLayout
+				    android:id="@+id/teaRecipeVolumeInfo"
+				    android:layout_width="@dimen/recipeInfoBoxWidth"
+				    android:layout_height="@dimen/recipeInfoBoxHeight"
+				    android:layout_marginLeft="@dimen/recipe_vol_info_left"
+				    android:layout_marginTop="@dimen/recipe_info_box_top"
+				    android:background="@drawable/text_field_border" >
+
+					<TextView
+					    android:id="@+id/teaRecipeVolumeValueLabel"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:gravity="right"
+					    android:text="12"
+					    android:focusable="true"
+					    android:textAppearance="?android:attr/textAppearanceLarge"
+					    android:textColor="@color/white"
+					    android:textSize="@dimen/recipe_name_field_text_height" />
+
+					<TextView
+					    android:id="@+id/teaRecipeVolumeUnitsLabel"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_marginLeft="80dp"
+					    android:layout_marginTop="@dimen/recipe_info_box_units_label_top"
+					    android:text="oz"
+					    android:textAppearance="?android:attr/textAppearanceLarge"
+					    android:textColor="@color/gray_label_color"
+					    android:textSize="@dimen/recipe_small_label_text_height" />
+
+				</FrameLayout>
+
+				<View
+				    android:id="@+id/recipe_temp_link"
+				    android:layout_width="129dp"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="left" />
+
+				<View
+				    android:id="@+id/recipe_volume_link"
+				    android:layout_width="129dp"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="right" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/teaRecipeBottomHalfLayout"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/content_border" >
+
+            <FrameLayout
+                android:id="@+id/teaRecipeTotalTimeWidget"
+                android:layout_width="@dimen/recipe_time_widget_width"
+                android:layout_height="@dimen/recipe_time_widget_height"
+                android:layout_marginLeft="@dimen/recipe_total_time_widget_left"
+                android:layout_marginTop="@dimen/recipe_time_widget_top" >
+
+                <TextView
+                    android:id="@+id/teaRecipeTotalTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/recipe_time_title_label_left"
+                    android:layout_marginTop="@dimen/recipe_time_title_label"
+                    android:text="@string/recipe_total_time_title"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/gray_label_color"
+                    android:textSize="@dimen/slider_label_text_height" />
+
+                <FrameLayout
+                    android:id="@+id/teaRecipeTotalTimeLabelHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/recipe_time_label_holder_top"
+                    android:background="@drawable/text_field_border" >
+
+                    <TextView
+                        android:id="@+id/teaRecipeTotalTimeValueLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="@dimen/recipe_total_time_value_label_top"
+                        android:text="2:45"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/recipe_name_field_text_height" />
+
+                    <TextView
+                        android:id="@+id/teaRecipeTotalTimeUnitsLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="@dimen/recipe_time_units_label_top"
+                        android:text="sec"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/slider_label_text_height" />
+
+                </FrameLayout>
+
+                <SeekBar
+                    android:id="@+id/teaRecipeTotalTimeSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="120"
+                    android:layout_marginTop="@dimen/recipe_time_slider_top"
+                    android:background="@drawable/time_slider_bkgd"
+                    android:progressDrawable="@drawable/time_slider_progress"
+                    android:thumb="@drawable/time_slider_indicator" 
+                    android:visibility="gone"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/teaRecipeVacuumTimeWidget"
+                android:layout_width="@dimen/recipe_time_widget_width"
+                android:layout_height="@dimen/recipe_time_widget_height"
+                android:layout_marginLeft="@dimen/recipe_vacuum_time_widget_left"
+                android:layout_marginTop="@dimen/recipe_time_widget_top" >
+
+                <TextView
+                    android:id="@+id/teaRecipeVacuumBreakTitleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/recipe_time_title_label_left"
+                    android:layout_marginTop="@dimen/recipe_time_title_label"
+                    android:text="@string/recipe_vacuum_break_time_text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/gray_label_color"
+                    android:textSize="@dimen/slider_label_text_height" />
+
+                <FrameLayout
+                    android:id="@+id/teaRecipeVacuumBreakTimeLabelHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/recipe_time_label_holder_top"
+                    android:background="@drawable/text_field_border" >
+
+                    <TextView
+                        android:id="@+id/teaRecipeVacuumBreakTimeValueLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="@dimen/recipe_total_time_value_label_top"
+                        android:text="2:45"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/recipe_name_field_text_height" />
+
+                    <TextView
+                        android:id="@+id/teaRecipeVacuumBreakTimeUnitsLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="@dimen/recipe_time_units_label_top"
+                        android:text="sec"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/slider_label_text_height" />
+                </FrameLayout>
+
+                <SeekBar
+                    android:id="@+id/teaRecipeVacuumBreakTimeSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:layout_marginTop="@dimen/recipe_time_slider_top"
+                    android:background="@drawable/time_slider_bkgd"
+                    android:progressDrawable="@drawable/time_slider_progress"
+                    android:thumb="@drawable/time_slider_indicator"
+                    android:visibility="gone"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/teaRecipeExtractTimeWidget"
+                android:layout_width="@dimen/recipe_time_widget_width"
+                android:layout_height="@dimen/recipe_time_widget_height"
+                android:layout_marginLeft="@dimen/recipe_extract_time_widget_left"
+                android:layout_marginTop="@dimen/recipe_time_widget_top" >
+
+                <TextView
+                    android:id="@+id/teaRecipeExtractTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/recipe_time_title_label_left"
+                    android:layout_marginTop="@dimen/recipe_time_title_label"
+                    android:text="@string/recipe_extraction_time_label_text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/gray_label_color"
+                    android:textSize="@dimen/slider_label_text_height" />
+
+                <FrameLayout
+                    android:id="@+id/teaRecipeExtractTimeLabelHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/recipe_time_label_holder_top"
+                    android:background="@drawable/text_field_border" >
+
+                    <TextView
+                        android:id="@+id/teaRecipeExtractTimeValueLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="@dimen/recipe_total_time_value_label_top"
+                        android:text="2:45"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/recipe_name_field_text_height" />
+
+                    <TextView
+                        android:id="@+id/teaRecipeExtractTimeUnitsLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="@dimen/recipe_time_units_label_top"
+                        android:text="sec"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/slider_label_text_height" />
+                </FrameLayout>
+
+                <SeekBar
+                    android:id="@+id/teaRecipeExtractTimeSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/recipe_time_slider_top"
+                    android:background="@drawable/time_slider_bkgd"
+                    android:progressDrawable="@drawable/time_slider_progress"
+                    android:thumb="@drawable/time_slider_indicator" 
+                    android:visibility="gone"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/agitation_graphic_holder"
+                android:layout_width="fill_parent"
+                android:layout_height="68dp"
+                android:layout_marginTop="@dimen/recipe_agitation_slider_holder_top"
+                android:background="@drawable/agitation_slider_holder_background" >
+				
+				<FrameLayout
+	                android:id="@+id/agitation_graphic_holder_inner"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_margin="0dp"
+	                android:padding="0dp" >
+                    					
+	                <!-- put agitation graphics here! -->
+	                
+	            </FrameLayout>                
+            </FrameLayout>
+            
+            <LinearLayout
+                android:id="@+id/ag_edit_btn_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="210dp"
+                android:background="@drawable/agitation_slider_holder_background"
+                android:gravity="center_vertical" >
+                
+                <FrameLayout 
+		            android:id="@+id/trash_ag_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1" >
+                    
+	                <ImageView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center"
+	                    android:src="@drawable/trash" />
+		            
+                </FrameLayout>
+                
+                <FrameLayout 
+		            android:id="@+id/left_ag_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1" >
+                    
+	                <ImageView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center"
+	                    android:src="@drawable/left_white_arrow" />
+		            
+                </FrameLayout>
+                
+                <FrameLayout 
+	                android:id="@+id/edit_ag_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1" >
+                    
+	                <ImageView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center"
+	                    android:src="@drawable/edit" />
+		            
+                </FrameLayout>
+                
+                <FrameLayout 
+	                android:id="@+id/right_ag_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1" >
+                    
+		                <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center"
+		                    android:src="@drawable/right_white_arrow" />
+		            
+                </FrameLayout>
+                
+                <FrameLayout 
+	                android:id="@+id/add_ag_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1" >
+                    
+	                <ImageView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center"
+	                    android:src="@drawable/white_plus" />
+		            
+                </FrameLayout>
+
+
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ag_notes_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="280dp"
+                android:background="@drawable/agitation_slider_holder_background"
+                android:gravity="center_vertical" >
+
+                <FrameLayout
+                    android:id="@+id/add_note_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_note_add_white_48dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/teaRecipeTotalTimeSmallValueLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/recipe_total_time_small_label_left"
+                android:layout_marginTop="@dimen/recipe_total_time_small_label_top"
+                android:text="2:45"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="@dimen/recipe_small_label_text_height" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/teaRecipeStackButtonHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <FrameLayout
+                android:id="@+id/teaRecipeStackButton1"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="@dimen/recipe_stack_button_top"
+                android:background="@drawable/active_stack" >
+
+                <TextView
+                    android:id="@+id/teaRecipeStackNumberLabel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="1"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/recipe_name_field_text_height" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/teaRecipeStackButton2"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
+                android:layout_marginLeft="@dimen/recipe_stack_button_2_left"
+                android:layout_marginTop="@dimen/recipe_stack_button_top"
+                android:background="@drawable/inactive_stack"
+                android:visibility="invisible" >
+
+                <TextView
+                    android:id="@+id/teaRecipeStackNumberLabel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="2"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/recipe_name_field_text_height" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/teaRecipeStackButton3"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
+                android:layout_marginLeft="@dimen/recipe_stack_button_3_left"
+                android:layout_marginTop="@dimen/recipe_stack_button_top"
+                android:background="@drawable/inactive_stack"
+                android:visibility="invisible" >
+
+                <TextView
+                    android:id="@+id/teaRecipeStackNumberLabel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="3"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/recipe_name_field_text_height" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/teaRecipeStackButtonAdd2"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
+                android:layout_marginLeft="@dimen/recipe_stack_button_add_left"
+                android:layout_marginTop="@dimen/recipe_stack_button_top"
+                android:background="@drawable/add_stack_button" >
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/teaRecipeStackButtonAdd3"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
+                android:layout_marginLeft="@dimen/recipe_stack_button_add_3_left"
+                android:layout_marginTop="@dimen/recipe_stack_button_top"
+                android:background="@drawable/add_stack_button"
+                android:visibility="invisible" >
+
+            </FrameLayout>
+            
+            <FrameLayout
+                android:id="@+id/teaRecipeStackRemoveButton"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="@dimen/recipe_stack_button_top"
+                android:layout_gravity="right"
+                android:background="@drawable/remove_stack_button"
+                android:visibility="invisible" >
+                
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+    
+</RelativeLayout>
