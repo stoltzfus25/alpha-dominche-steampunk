@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_bkgd">#000</color>
+    <color name="test">#00f</color>
+    <color name="home_activity_coffee_label_color">#fff</color>
+    <color name="home_activity_roaster_label_color">#8fff</color>
+    <color name="home_activity_volume_label_color">#fff</color>
+    <color name="mercury_color">#fff</color>
+    <color name="fill_label_color">#fff</color>
+    <color name="number_label_color">#fff</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray_label_color">#9c9c9c</color>
+    <color name="dark_blue_test">#000060</color>
+    <color name="dk_gray_bkgd">#181818</color>
+    <color name="med_dk_gray_outline">#2e2e2e</color>
+    <color name="red">#FF0000</color>
+    <color name="transparent_black">#d0000000</color>
+    <color name="dark_blue_test_semi_trans">#800000f0</color>
+    
+</resources>

@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="600dp"
+     android:layout_height="match_parent"
+	  android:paddingBottom="@dimen/activity_vertical_margin"
+	  android:paddingLeft="@dimen/activity_horizontal_margin"
+	  android:paddingRight="@dimen/activity_horizontal_margin"
+	  android:paddingTop="@dimen/activity_vertical_margin" >
+	
+	  <LinearLayout
+	      android:id="@+id/content_frame"
+	      android:layout_width="match_parent"
+	      android:layout_height="match_parent"
+	      android:layout_alignParentLeft="true"
+	      android:layout_alignParentTop="true"
+	      android:background="@color/black"
+	      android:orientation="vertical" >
+
+	      <LinearLayout
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:padding="@dimen/home_activity_top_row_padding" >
+
+	          <ImageView
+	              android:id="@+id/cleaning_cycle_close_button"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:src="@drawable/x1280" />
+
+	          <Space
+	              android:layout_width="0dp"
+	              android:layout_height="match_parent"
+	              android:layout_weight="1" />
+
+	          <TextView
+	              android:id="@+id/title_label"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_gravity="center"
+	              android:text="@string/cleaning_cycle_title_text"
+	              android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:textColor="@color/white"
+                  android:textSize="@dimen/recipe_editor_title_text_height" />
+
+	          <Space
+	              android:layout_width="0dp"
+	              android:layout_height="match_parent"
+	              android:layout_weight="1" />
+
+	          <ImageView
+	              android:id="@+id/cleaning_cycle_settings_button"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:src="@drawable/settings_button" />
+	      </LinearLayout>
+	
+	      <ImageView
+	          android:id="@+id/teaRecipeSaveButton"
+	          android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:src="@drawable/divider_horizontal" />
+	
+	      <LinearLayout
+	          android:layout_width="match_parent"
+	          android:layout_height="fill_parent" >
+	
+	          <LinearLayout
+	              android:id="@+id/crucibleLayout0"
+	              android:layout_width="0dp"
+	              android:layout_height="match_parent"
+	              android:layout_weight="1"
+	              android:orientation="vertical"
+	              android:padding="@dimen/home_activity_crucible_outer_padding" >
+	
+	              <LinearLayout
+	                  android:layout_width="fill_parent"
+	                  android:layout_height="fill_parent"
+	                  android:gravity="center_horizontal"
+	                  android:orientation="vertical" >
+	                  
+	                  <LinearLayout
+	                      android:id="@+id/favorites_link_0"
+	                      android:layout_width="fill_parent"
+	                      android:layout_height="0dp"
+	                      android:gravity="center"
+	                  	  android:layout_weight="1"
+	                      android:orientation="vertical" >
+		
+		                  <TextView
+		                      android:id="@+id/statusLabel0"
+		                      android:layout_width="100dp"
+		                      android:layout_height="wrap_content"
+		                      android:layout_gravity="center"
+		                      android:ellipsize="end"
+		                      android:gravity="center_horizontal"
+		                      android:scrollHorizontally="false"
+		                      android:singleLine="false"
+		                      android:text="INSERT CLEANING TABLET AND PISTON"
+		                      android:textColor="@color/white"
+		                      android:textSize="@dimen/roaster_label_text_height" />
+		                  
+	                  </LinearLayout>
+	
+	                  <FrameLayout
+	                      android:id="@+id/crucibleViewBox0"
+	                      android:layout_width="match_parent"
+	                      android:layout_height="0dp"
+	                      android:background="@drawable/crucible_9_patch"
+	                      android:layout_weight="4" >
+	                      
+	                      <FrameLayout
+	                          android:id="@+id/crucibleInnards0"
+	                          android:layout_width="106dp"
+	                          android:layout_height="fill_parent"
+	                          android:layout_gravity="center_horizontal" >
+	
+			                      <ImageView
+			                          android:id="@+id/container0"
+			                          android:layout_width="wrap_content"
+			                          android:layout_height="wrap_content"
+			                          android:layout_marginLeft="@dimen/container_left_margin"
+			                          android:layout_marginTop="@dimen/container_top_margin"
+			                          android:src="@drawable/container_glow1280" />
+			                      
+			                      <View
+			                          android:id="@+id/mercury0"
+			                          android:layout_width="@dimen/mercury_width"
+			                          android:layout_height="@dimen/mercury_start_height"
+			                          android:layout_gravity="center_horizontal"
+			                          android:layout_marginTop="@dimen/mercury_start_top_margin"
+			                          android:background="@color/mercury_color" />
+			
+			                      <ImageView
+			                          android:id="@+id/thermometer0"
+			                          android:layout_width="wrap_content"
+			                          android:layout_height="wrap_content"
+			                          android:layout_gravity="center_vertical|center_horizontal"
+			                          android:src="@drawable/thermometer_glow1280" />
+			
+			                      <ImageView
+			                          android:id="@+id/droplet0_0"
+			                          android:layout_width="wrap_content"
+			                          android:layout_height="wrap_content"
+			                          android:layout_marginLeft="@dimen/fill_droplet_left_margin"
+			                          android:layout_marginTop="@dimen/fill_droplet_0_top_margin"
+			                          android:src="@drawable/drop_smaller_fill_glow1280" />
+			
+			                      <ImageView
+			                          android:id="@+id/droplet0_1"
+			                          android:layout_width="wrap_content"
+			                          android:layout_height="wrap_content"
+			                          android:layout_marginLeft="@dimen/fill_droplet_left_margin"
+			                          android:layout_marginTop="@dimen/fill_droplet_1_top_margin"
+			                          android:src="@drawable/drop_smaller_fill_glow1280" />
+			
+			                      <ImageView
+			                          android:id="@+id/droplet0_2"
+			                          android:layout_width="wrap_content"
+			                          android:layout_height="wrap_content"
+			                          android:layout_marginLeft="@dimen/fill_droplet_left_margin"
+			                          android:layout_marginTop="@dimen/fill_droplet_2_top_margin"
+			                          android:src="@drawable/drop_smaller_fill_glow1280" />
+			
+			                      <TextView
+			                          android:id="@+id/fillLabel0"
+			                          android:layout_width="wrap_content"
+			                          android:layout_height="wrap_content"
+			                          android:layout_gravity="center_vertical|center_horizontal"
+			                          android:text="FILL"
+			                          android:textColor="@color/fill_label_color"
+			                          android:textSize="@dimen/fill_label_text_height" />
+			
+			                      <TextView
+			                          android:id="@+id/topNumberLabel0"
+			                          android:layout_width="wrap_content"
+			                          android:layout_height="wrap_content"
+			                          android:layout_gravity="center_horizontal"
+			                          android:layout_marginTop="@dimen/top_number_label_margin"
+			                          android:text="number"
+			                          android:textColor="@color/number_label_color"
+			                          android:textSize="@dimen/number_label_text_height" />
+			
+			                      <TextView
+			                          android:id="@+id/bottomNumberLabel0"
+			                          android:layout_width="wrap_content"
+			                          android:layout_height="wrap_content"
+			                          android:layout_gravity="center_horizontal"
+			                          android:layout_marginTop="@dimen/bottom_number_label_margin"
+			                          android:gravity="center_horizontal"
+			                          android:text="number"
+			                          android:textAlignment="gravity"
+			                          android:textColor="@color/number_label_color"
+			                          android:textSize="@dimen/number_label_text_height" />
+		
+			                      <ImageView
+			                          android:id="@+id/dropletHider0"
+			                          android:layout_width="100dp"
+			                          android:layout_height="175dp"
+			                          android:layout_gravity="center_horizontal"
+			                          android:layout_marginTop="@dimen/crucible_droplet_hider_top"
+			                          android:src="@drawable/black_pixel" />
+			
+			                      <ImageView
+			                          android:id="@+id/piston0"
+			                          android:layout_width="wrap_content"
+			                          android:layout_height="wrap_content"
+			                          android:layout_gravity="center_horizontal"
+			                          android:layout_marginTop="@dimen/piston_top_margin"
+			                          android:src="@drawable/piston_glow1280" />
+			
+			                      <ImageView
+			                          android:id="@+id/bigDownArrow0"
+			                          android:layout_width="wrap_content"
+			                          android:layout_height="wrap_content"
+			                          android:layout_gravity="center_horizontal"
+			                          android:layout_marginTop="@dimen/big_arrow_top_margin"
+			                          android:src="@drawable/arrow_big_down_glow1280" />
+		
+			                      <ImageView
+			                          android:id="@+id/crucible_steam_arrows_0"
+			                          android:layout_width="wrap_content"
+			                          android:layout_height="wrap_content"
+			                          android:layout_gravity="center_horizontal"
+			                          android:layout_marginTop="@dimen/steam_arrows_top_margin"
+			                          android:src="@drawable/arrows_glow1280" />
+		
+			                      <ImageView
+			                          android:id="@+id/bigDrop0"
+			                          android:layout_width="75dp"
+			                          android:layout_height="wrap_content"
+			                          android:layout_gravity="center_vertical|center_horizontal"
+			                          android:src="@drawable/drop_big_glow1280" />
+			                      
+						  </FrameLayout>
+						  
+	                  </FrameLayout>
+	
+	                  <FrameLayout
+	                      android:id="@+id/crucibleBottomButtons0"
+	                      android:layout_width="match_parent"
+	                      android:layout_height="wrap_content" >
+	
+	                      <ImageView
+	                          android:id="@+id/crucibleBottomDropButton0"
+	                          android:layout_width="wrap_content"
+	                          android:layout_height="wrap_content"
+	                          android:layout_gravity="center_horizontal"
+	                          android:src="@drawable/drop_small1280"
+	                          android:visibility="invisible" />
+	
+	                      <ImageView
+	                          android:id="@+id/crucibleBottomXButton0"
+	                          android:layout_width="wrap_content"
+	                          android:layout_height="wrap_content"
+	                          android:layout_gravity="center_horizontal"
+	                          android:layout_marginTop="@dimen/bottom_x_button_top_margin"
+	                          android:src="@drawable/x1280" />
+	
+	                  </FrameLayout>
+	
+	              </LinearLayout>
+	
+	          </LinearLayout>
+	
+	          <ImageView
+	              android:id="@+id/verticalDivider0"
+	              android:layout_width="wrap_content"
+	              android:layout_height="fill_parent"
+	              android:src="@drawable/divider_vertical" />
+	
+	          <LinearLayout
+	              android:id="@+id/crucibleLayout1"
+	              android:layout_width="0dp"
+	              android:layout_height="match_parent"
+	              android:layout_weight="1"
+	              android:orientation="vertical"
+	              android:padding="@dimen/home_activity_crucible_outer_padding" >
+	
+	              <LinearLayout
+	                  android:layout_width="fill_parent"
+	                  android:layout_height="fill_parent"
+	                  android:gravity="center_horizontal"
+	                  android:orientation="vertical" >
+	                  
+	                  <LinearLayout
+	                      android:id="@+id/favorites_link_1"
+	                      android:layout_width="fill_parent"
+	                      android:layout_height="0dp"
+	                      android:gravity="center"
+	                  	  android:layout_weight="1"
+	                      android:orientation="vertical" >
+		                  	
+		                  <TextView
+		                      android:id="@+id/statusLabel1"
+		                      android:layout_width="100dp"
+		                      android:layout_height="wrap_content"
+		                      android:layout_gravity="center"
+		                      android:ellipsize="end"
+		                      android:gravity="center_horizontal"
+		                      android:scrollHorizontally="false"
+		                      android:singleLine="false"
+		                      android:text="INSERT CLEANING TABLET AND PISTON"
+		                      android:textColor="@color/white"
+		                      android:textSize="@dimen/roaster_label_text_height" />
+		                  
+	                  </LinearLayout>
+	
+	                  <FrameLayout
+	                      android:id="@+id/crucibleViewBox1"
+	                      android:layout_width="match_parent"
+	                      android:layout_height="0dp"
+	                      android:layout_weight="4"
+	                      android:background="@drawable/crucible_9_patch" >
+	                      
+	                      <FrameLayout
+	                          android:id="@+id/crucibleInnards1"
+	                          android:layout_width="106dp"
+	                          android:layout_height="fill_parent"
+	                          android:layout_gravity="center_horizontal" >
+	                      	
+		                      <ImageView
+		                          android:id="@+id/container1"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="@dimen/container_left_margin"
+		                          android:layout_marginTop="@dimen/container_top_margin"
+		                          android:src="@drawable/container_glow1280" />
+		
+		                      <View
+		                          android:id="@+id/mercury1"
+		                          android:layout_width="@dimen/mercury_width"
+		                          android:layout_height="@dimen/mercury_start_height"
+		                          android:layout_gravity="center_horizontal"
+		                          android:layout_marginTop="@dimen/mercury_start_top_margin"
+		                          android:background="@color/mercury_color" />
+		
+		                      <ImageView
+		                          android:id="@+id/thermometer1"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_vertical|center_horizontal"
+		                          android:src="@drawable/thermometer_glow1280" />
+		
+		                      <ImageView
+		                          android:id="@+id/droplet1_0"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="@dimen/fill_droplet_left_margin"
+		                          android:layout_marginTop="@dimen/fill_droplet_0_top_margin"
+		                          android:src="@drawable/drop_smaller_fill_glow1280" />
+		
+		                      <ImageView
+		                          android:id="@+id/droplet1_1"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="@dimen/fill_droplet_left_margin"
+		                          android:layout_marginTop="@dimen/fill_droplet_1_top_margin"
+		                          android:src="@drawable/drop_smaller_fill_glow1280" />
+		
+		                      <ImageView
+		                          android:id="@+id/droplet1_2"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="@dimen/fill_droplet_left_margin"
+		                          android:layout_marginTop="@dimen/fill_droplet_2_top_margin"
+		                          android:src="@drawable/drop_smaller_fill_glow1280" />
+		
+		                      <TextView
+		                          android:id="@+id/fillLabel1"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_vertical|center_horizontal"
+		                          android:text="FILL"
+		                          android:textColor="@color/fill_label_color"
+		                          android:textSize="@dimen/fill_label_text_height" />
+		
+		                      <TextView
+		                          android:id="@+id/topNumberLabel1"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_horizontal"
+		                          android:layout_marginTop="@dimen/top_number_label_margin"
+		                          android:text="number"
+		                          android:textColor="@color/number_label_color"
+		                          android:textSize="@dimen/number_label_text_height" />
+		
+		                      <TextView
+		                          android:id="@+id/bottomNumberLabel1"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_horizontal"
+		                          android:layout_marginTop="@dimen/bottom_number_label_margin"
+		                          android:gravity="center_horizontal"
+		                          android:text="number"
+		                          android:textAlignment="gravity"
+		                          android:textColor="@color/number_label_color"
+		                          android:textSize="@dimen/number_label_text_height" />
+	
+		                      <ImageView
+		                          android:id="@+id/dropletHider1"
+		                          android:layout_width="100dp"
+		                          android:layout_height="175dp"
+		                          android:layout_marginTop="@dimen/crucible_droplet_hider_top"
+		                          android:src="@drawable/black_pixel" />
+		
+		                      <ImageView
+		                          android:id="@+id/piston1"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginTop="@dimen/piston_top_margin"
+		                          android:src="@drawable/piston_glow1280" />
+		
+		                      <ImageView
+		                          android:id="@+id/bigDownArrow1"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_horizontal"
+		                          android:layout_marginTop="@dimen/big_arrow_top_margin"
+		                          android:src="@drawable/arrow_big_down_glow1280" />
+	
+		                      <ImageView
+		                          android:id="@+id/crucible_steam_arrows_1"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_horizontal"
+		                          android:layout_marginTop="@dimen/steam_arrows_top_margin"
+		                          android:src="@drawable/arrows_glow1280" />
+		
+		                      <ImageView
+		                          android:id="@+id/bigDrop1"
+		                          android:layout_width="75dp"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_vertical|center_horizontal"
+		                          android:src="@drawable/drop_big_glow1280" />
+	
+	                      </FrameLayout>
+	                      
+	                  </FrameLayout>
+	
+	                  <FrameLayout
+	                      android:id="@+id/crucibleBottomButtons1"
+	                      android:layout_width="match_parent"
+	                      android:layout_height="wrap_content" >
+	
+	                      <ImageView
+	                          android:id="@+id/crucibleBottomDropButton1"
+	                          android:layout_width="wrap_content"
+	                          android:layout_height="wrap_content"
+	                          android:layout_gravity="center_horizontal"
+	                          android:src="@drawable/drop_small1280"
+	                          android:visibility="invisible" />
+	
+	                      <ImageView
+	                          android:id="@+id/crucibleBottomXButton1"
+	                          android:layout_width="wrap_content"
+	                          android:layout_height="wrap_content"
+	                          android:layout_gravity="center_horizontal"
+	                          android:layout_marginTop="@dimen/bottom_x_button_top_margin"
+	                          android:src="@drawable/x1280" />
+	
+	                  </FrameLayout>
+	
+	              </LinearLayout>
+	
+	          </LinearLayout>
+	
+	          <ImageView
+	              android:id="@+id/verticalDivider1"
+	              android:layout_width="wrap_content"
+	              android:layout_height="fill_parent"
+	              android:src="@drawable/divider_vertical" />
+	
+	          <LinearLayout
+	              android:id="@+id/crucibleLayout2"
+	              android:layout_width="0dp"
+	              android:layout_height="match_parent"
+	              android:layout_weight="1"
+	              android:orientation="vertical"
+	              android:padding="@dimen/home_activity_crucible_outer_padding" >
+	
+	              <LinearLayout
+	                  android:layout_width="fill_parent"
+	                  android:layout_height="fill_parent"
+	                  android:gravity="center_horizontal"
+	                  android:orientation="vertical" >
+	                  
+	                  <LinearLayout
+	                      android:id="@+id/favorites_link_2"
+	                      android:layout_width="fill_parent"
+	                      android:layout_height="0dp"
+	                      android:gravity="center"
+	                  	  android:layout_weight="1"
+	                      android:orientation="vertical" >
+		                  	
+		                  <TextView
+		                      android:id="@+id/statusLabel2"
+		                      android:layout_width="100dp"
+		                      android:layout_height="wrap_content"
+		                      android:layout_gravity="center"
+		                      android:ellipsize="end"
+		                      android:gravity="center_horizontal"
+		                      android:scrollHorizontally="false"
+		                      android:singleLine="false"
+		                      android:text="INSERT CLEANING TABLET AND PISTON"
+		                      android:textColor="@color/white"
+		                      android:textSize="@dimen/roaster_label_text_height" />
+		                  
+	                  </LinearLayout>
+	
+	                  <FrameLayout
+	                      android:id="@+id/crucibleViewBox2"
+	                      android:layout_width="match_parent"
+	                      android:layout_height="0dp"
+	                      android:layout_weight="4"
+	                      android:background="@drawable/crucible_9_patch" >
+	                      
+	                      <FrameLayout
+	                          android:id="@+id/crucibleInnards2"
+	                          android:layout_width="106dp"
+	                          android:layout_height="fill_parent"
+	                          android:layout_gravity="center_horizontal" >
+	                      	
+		                      <ImageView
+		                          android:id="@+id/container2"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="@dimen/container_left_margin"
+		                          android:layout_marginTop="@dimen/container_top_margin"
+		                          android:src="@drawable/container_glow1280" />
+		
+		                      <View
+		                          android:id="@+id/mercury2"
+		                          android:layout_width="@dimen/mercury_width"
+		                          android:layout_height="@dimen/mercury_start_height"
+		                          android:layout_gravity="center_horizontal"
+		                          android:layout_marginTop="@dimen/mercury_start_top_margin"
+		                          android:background="@color/mercury_color" />
+		
+		                      <ImageView
+		                          android:id="@+id/thermometer2"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_vertical|center_horizontal"
+		                          android:src="@drawable/thermometer_glow1280" />
+		
+		                      <ImageView
+		                          android:id="@+id/droplet2_0"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="@dimen/fill_droplet_left_margin"
+		                          android:layout_marginTop="@dimen/fill_droplet_0_top_margin"
+		                          android:src="@drawable/drop_smaller_fill_glow1280" />
+		
+		                      <ImageView
+		                          android:id="@+id/droplet2_1"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="@dimen/fill_droplet_left_margin"
+		                          android:layout_marginTop="@dimen/fill_droplet_1_top_margin"
+		                          android:src="@drawable/drop_smaller_fill_glow1280" />
+		
+		                      <ImageView
+		                          android:id="@+id/droplet2_2"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="@dimen/fill_droplet_left_margin"
+		                          android:layout_marginTop="@dimen/fill_droplet_2_top_margin"
+		                          android:src="@drawable/drop_smaller_fill_glow1280" />
+		
+		                      <TextView
+		                          android:id="@+id/fillLabel2"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_vertical|center_horizontal"
+		                          android:text="FILL"
+		                          android:textColor="@color/fill_label_color"
+		                          android:textSize="@dimen/fill_label_text_height" />
+		
+		                      <TextView
+		                          android:id="@+id/topNumberLabel2"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_horizontal"
+		                          android:layout_marginTop="@dimen/top_number_label_margin"
+		                          android:text="number"
+		                          android:textColor="@color/number_label_color"
+		                          android:textSize="@dimen/number_label_text_height" />
+		
+		                      <TextView
+		                          android:id="@+id/bottomNumberLabel2"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_horizontal"
+		                          android:layout_marginTop="@dimen/bottom_number_label_margin"
+		                          android:gravity="center_horizontal"
+		                          android:text="number"
+		                          android:textAlignment="gravity"
+		                          android:textColor="@color/number_label_color"
+		                          android:textSize="@dimen/number_label_text_height" />
+	
+		                      <ImageView
+		                          android:id="@+id/dropletHider2"
+		                          android:layout_width="100dp"
+		                          android:layout_height="175dp"
+		                          android:layout_marginTop="@dimen/crucible_droplet_hider_top"
+		                          android:src="@drawable/black_pixel" />
+		
+		                      <ImageView
+		                          android:id="@+id/piston2"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginTop="@dimen/piston_top_margin"
+		                          android:src="@drawable/piston_glow1280" />
+		
+		                      <ImageView
+		                          android:id="@+id/bigDownArrow2"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_horizontal"
+		                          android:layout_marginTop="@dimen/big_arrow_top_margin"
+		                          android:src="@drawable/arrow_big_down_glow1280" />
+	
+		                      <ImageView
+		                          android:id="@+id/crucible_steam_arrows_2"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_horizontal"
+		                          android:layout_marginTop="@dimen/steam_arrows_top_margin"
+		                          android:src="@drawable/arrows_glow1280" />
+		
+		                      <ImageView
+		                          android:id="@+id/bigDrop2"
+		                          android:layout_width="75dp"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_vertical|center_horizontal"
+		                          android:src="@drawable/drop_big_glow1280" />
+		                      
+		                  </FrameLayout>
+	
+	                  </FrameLayout>
+	
+	                  <FrameLayout
+	                      android:id="@+id/crucibleBottomButtons2"
+	                      android:layout_width="match_parent"
+	                      android:layout_height="wrap_content" >
+	
+	                      <ImageView
+	                          android:id="@+id/crucibleBottomDropButton2"
+	                          android:layout_width="wrap_content"
+	                          android:layout_height="wrap_content"
+	                          android:layout_gravity="center_horizontal"
+	                          android:src="@drawable/drop_small1280"
+	                          android:visibility="invisible" />
+	
+	                      <ImageView
+	                          android:id="@+id/crucibleBottomXButton2"
+	                          android:layout_width="wrap_content"
+	                          android:layout_height="wrap_content"
+	                          android:layout_gravity="center_horizontal"
+	                          android:layout_marginTop="@dimen/bottom_x_button_top_margin"
+	                          android:src="@drawable/x1280" />
+	
+	                  </FrameLayout>
+	
+	              </LinearLayout>
+	
+	          </LinearLayout>
+	
+	          <ImageView
+	              android:id="@+id/verticalDivider2"
+	              android:layout_width="wrap_content"
+	              android:layout_height="fill_parent"
+	              android:src="@drawable/divider_vertical" />
+	
+	          <LinearLayout
+	              android:id="@+id/crucibleLayout3"
+	              android:layout_width="0dp"
+	              android:layout_height="match_parent"
+	              android:layout_weight="1"
+	              android:orientation="vertical"
+	              android:padding="@dimen/home_activity_crucible_outer_padding" >
+	
+	              <LinearLayout
+	                  android:layout_width="fill_parent"
+	                  android:layout_height="fill_parent"
+	                  android:gravity="center_horizontal"
+	                  android:orientation="vertical" >
+	                  
+	                  <LinearLayout
+	                      android:id="@+id/favorites_link_3"
+	                      android:layout_width="fill_parent"
+	                      android:layout_height="0dp"
+	                      android:gravity="center"
+	                  	  android:layout_weight="1"
+	                      android:orientation="vertical" >
+		                  	
+		                  <TextView
+		                      android:id="@+id/statusLabel3"
+		                      android:layout_width="100dp"
+		                      android:layout_height="wrap_content"
+		                      android:layout_gravity="center"
+		                      android:ellipsize="end"
+		                      android:gravity="center_horizontal"
+		                      android:scrollHorizontally="false"
+		                      android:singleLine="false"
+		                      android:text="INSERT CLEANING TABLET AND PISTON"
+		                      android:textColor="@color/white"
+		                      android:textSize="@dimen/roaster_label_text_height" />
+		                  
+	                  </LinearLayout>
+	
+	                  <FrameLayout
+	                      android:id="@+id/crucibleViewBox3"
+	                      android:layout_width="match_parent"
+	                      android:layout_height="0dp"
+	                      android:layout_weight="4"
+	                      android:background="@drawable/crucible_9_patch" >
+	                      
+	                      <FrameLayout
+	                          android:id="@+id/crucibleInnards3"
+	                          android:layout_width="106dp"
+	                          android:layout_height="fill_parent"
+	                          android:layout_gravity="center_horizontal" >
+	                      	
+		                      <ImageView
+		                          android:id="@+id/container3"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="@dimen/container_left_margin"
+		                          android:layout_marginTop="@dimen/container_top_margin"
+		                          android:src="@drawable/container_glow1280" />
+		
+		                      <View
+		                          android:id="@+id/mercury3"
+		                          android:layout_width="@dimen/mercury_width"
+		                          android:layout_height="@dimen/mercury_start_height"
+		                          android:layout_gravity="center_horizontal"
+		                          android:layout_marginTop="@dimen/mercury_start_top_margin"
+		                          android:background="@color/mercury_color" />
+		
+		                      <ImageView
+		                          android:id="@+id/thermometer3"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_vertical|center_horizontal"
+		                          android:src="@drawable/thermometer_glow1280" />
+		
+		                      <ImageView
+		                          android:id="@+id/droplet3_0"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="@dimen/fill_droplet_left_margin"
+		                          android:layout_marginTop="@dimen/fill_droplet_0_top_margin"
+		                          android:src="@drawable/drop_smaller_fill_glow1280" />
+		
+		                      <ImageView
+		                          android:id="@+id/droplet3_1"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="@dimen/fill_droplet_left_margin"
+		                          android:layout_marginTop="@dimen/fill_droplet_1_top_margin"
+		                          android:src="@drawable/drop_smaller_fill_glow1280" />
+		
+		                      <ImageView
+		                          android:id="@+id/droplet3_2"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="@dimen/fill_droplet_left_margin"
+		                          android:layout_marginTop="@dimen/fill_droplet_2_top_margin"
+		                          android:src="@drawable/drop_smaller_fill_glow1280" />
+		
+		                      <TextView
+		                          android:id="@+id/fillLabel3"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_vertical|center_horizontal"
+		                          android:text="FILL"
+		                          android:textColor="@color/fill_label_color"
+		                          android:textSize="@dimen/fill_label_text_height" />
+		
+		                      <TextView
+		                          android:id="@+id/topNumberLabel3"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_horizontal"
+		                          android:layout_marginTop="@dimen/top_number_label_margin"
+		                          android:text="number"
+		                          android:textColor="@color/number_label_color"
+		                          android:textSize="@dimen/number_label_text_height" />
+		
+		                      <TextView
+		                          android:id="@+id/bottomNumberLabel3"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_horizontal"
+		                          android:layout_marginTop="@dimen/bottom_number_label_margin"
+		                          android:gravity="center_horizontal"
+		                          android:text="number"
+		                          android:textAlignment="gravity"
+		                          android:textColor="@color/number_label_color"
+		                          android:textSize="@dimen/number_label_text_height" />
+	
+		                      <ImageView
+		                          android:id="@+id/dropletHider3"
+		                          android:layout_width="100dp"
+		                          android:layout_height="175dp"
+		                          android:layout_marginTop="@dimen/crucible_droplet_hider_top"
+		                          android:src="@drawable/black_pixel" />
+		
+		                      <ImageView
+		                          android:id="@+id/piston3"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginTop="@dimen/piston_top_margin"
+		                          android:src="@drawable/piston_glow1280" />
+		
+		                      <ImageView
+		                          android:id="@+id/bigDownArrow3"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_horizontal"
+		                          android:layout_marginTop="@dimen/big_arrow_top_margin"
+		                          android:src="@drawable/arrow_big_down_glow1280" />
+	
+		                      <ImageView
+		                          android:id="@+id/crucible_steam_arrows_3"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_horizontal"
+		                          android:layout_marginTop="@dimen/steam_arrows_top_margin"
+		                          android:src="@drawable/arrows_glow1280" />
+		
+		                      <ImageView
+		                          android:id="@+id/bigDrop3"
+		                          android:layout_width="75dp"
+		                          android:layout_height="wrap_content"
+		                          android:layout_gravity="center_vertical|center_horizontal"
+		                          android:src="@drawable/drop_big_glow1280" />
+		                      
+	                      </FrameLayout>
+	
+	                  </FrameLayout>
+	                      	
+	                  <FrameLayout
+	                      android:id="@+id/crucibleBottomButtons3"
+	                      android:layout_width="match_parent"
+	                      android:layout_height="wrap_content" >
+	
+	                      <ImageView
+	                          android:id="@+id/crucibleBottomDropButton3"
+	                          android:layout_width="wrap_content"
+	                          android:layout_height="wrap_content"
+	                          android:layout_gravity="center_horizontal"
+	                          android:src="@drawable/drop_small1280"
+	                          android:visibility="invisible" />
+	
+	                      <ImageView
+	                          android:id="@+id/crucibleBottomXButton3"
+	                          android:layout_width="wrap_content"
+	                          android:layout_height="wrap_content"
+	                          android:layout_gravity="center_horizontal"
+	                          android:layout_marginTop="@dimen/bottom_x_button_top_margin"
+	                          android:src="@drawable/x1280" />
+	
+	                  </FrameLayout>
+	
+	              </LinearLayout>
+	
+	          </LinearLayout>
+	
+	      </LinearLayout>
+	
+	  </LinearLayout>
+
+	  
+</RelativeLayout>
