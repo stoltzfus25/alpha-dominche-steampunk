@@ -24,7 +24,7 @@ import com.alphadominche.steampunkhmi.database.tables.PersistenceQueueTable;
 import com.alphadominche.steampunkhmi.database.tables.RecipeTable;
 import com.alphadominche.steampunkhmi.database.tables.RoasterTable;
 import com.alphadominche.steampunkhmi.model.Recipe;
-import com.alphadominche.steampunkhmi.restclient.networkclient.DefaultNetworkClient;
+import com.alphadominche.steampunkhmi.restclient.networkclient.LocalOnlyNetworkClient;
 import com.alphadominche.steampunkhmi.restclient.networkclient.NetworkClient;
 import com.alphadominche.steampunkhmi.restclient.networkclient.NetworkClient.NetworkClientCallbacks;
 import com.alphadominche.steampunkhmi.restclient.networkclient.RemoteClasses.RemoteFavorite;
@@ -137,7 +137,7 @@ public class DefaultContentProcessor implements ContentProcessor,
 
     @Override
     public void login(int requestId, String username, String password) {
-        NetworkClient networkClient = new DefaultNetworkClient(mContext, this);
+        NetworkClient networkClient = new LocalOnlyNetworkClient(mContext, this);
 
         networkClient.postLogin(requestId, username, password);
     }
@@ -225,7 +225,7 @@ public class DefaultContentProcessor implements ContentProcessor,
 
     @Override
     public List<UserIdMapping> getUserMapping() {
-        NetworkClient networkClient = new DefaultNetworkClient(mContext, this);
+        NetworkClient networkClient = new LocalOnlyNetworkClient(mContext, this);
 
         return networkClient.getUserMapping();
     }
@@ -532,7 +532,7 @@ public class DefaultContentProcessor implements ContentProcessor,
 
         mPersistLock.lock();
 
-        NetworkClient networkClient = new DefaultNetworkClient(mContext, this);
+        NetworkClient networkClient = new LocalOnlyNetworkClient(mContext, this);
 
         long timestamp = SteampunkUtils.getLastRecipeSyncDate(mContext);
 
@@ -547,7 +547,7 @@ public class DefaultContentProcessor implements ContentProcessor,
 
         mPersistLock.lock();
 
-        NetworkClient networkClient = new DefaultNetworkClient(mContext, this);
+        NetworkClient networkClient = new LocalOnlyNetworkClient(mContext, this);
         long timeStamp = SteampunkUtils.getLastFavoritesSyncDate(mContext);
 
         networkClient.getFavorites(SteampunkUtils.getRequestId(mContext),
@@ -564,7 +564,7 @@ public class DefaultContentProcessor implements ContentProcessor,
 
         mPersistLock.lock();
 
-        NetworkClient networkClient = new DefaultNetworkClient(mContext, this);
+        NetworkClient networkClient = new LocalOnlyNetworkClient(mContext, this);
 
         RemoteLog newLog = new RemoteLog(requestId, machineId, userId, date,
                 crucibleIndex, recipeUuid, severity, type, message);
@@ -583,7 +583,7 @@ public class DefaultContentProcessor implements ContentProcessor,
 
         mTempMachineSettings = MachineSettings
                 .getMachineSettingsFromSharedPreferences(mContext);
-        NetworkClient networkClient = new DefaultNetworkClient(mContext, this);
+        NetworkClient networkClient = new LocalOnlyNetworkClient(mContext, this);
         networkClient.getMachineWithSerialNumber(requestId, serialNum, false);
 
         mPersistLock.unlock();
@@ -603,7 +603,7 @@ public class DefaultContentProcessor implements ContentProcessor,
         mPersistLock.lock();
 
         mTempMachineSettings = machineSettings;
-        NetworkClient networkClient = new DefaultNetworkClient(mContext, this);
+        NetworkClient networkClient = new LocalOnlyNetworkClient(mContext, this);
 
         if (machineSettings.getSerialNumber().isEmpty())
             sContentProcessorCallbacks.invalidMachineSerialNumber(requestId);
@@ -634,7 +634,7 @@ public class DefaultContentProcessor implements ContentProcessor,
                 accountSettings.getCity(), accountSettings.getState(), accountSettings.getCountry(), accountSettings.getZipCode(), accountSettings.getProtectRecipes());
         Long steampunkId = SteampunkUtils.getCurrentSteampunkUserId(mContext);
         Long userId = SteampunkUtils.getCurrentUserId(mContext);
-        NetworkClient networkClient = new DefaultNetworkClient(mContext, this);
+        NetworkClient networkClient = new LocalOnlyNetworkClient(mContext, this);
         RemoteUser ru = new RemoteUser();
         ru.email = accountSettings.getEmail();
         RemoteSteamPunkUser rspu = new RemoteSteamPunkUser();
@@ -655,21 +655,21 @@ public class DefaultContentProcessor implements ContentProcessor,
     public void resetPassword(int requestId, String identifier) {
         if (!mConnected) return;
 
-        NetworkClient networkClient = new DefaultNetworkClient(mContext, this);
+        NetworkClient networkClient = new LocalOnlyNetworkClient(mContext, this);
         String machine_id = Long.toString(SteampunkUtils.getMachineId(mContext));
         networkClient.postPasswordReset(requestId, identifier, machine_id);
     }
 
     @Override
     public void changePassword(Integer requestId, String old, String newPass) {
-        NetworkClient networkClient = new DefaultNetworkClient(mContext, this);
+        NetworkClient networkClient = new LocalOnlyNetworkClient(mContext, this);
 
         networkClient.postPasswordChange(requestId, old, newPass);
     }
 
     @Override
     public void resetPin(int requestId, long machineId, String PIN) {
-        NetworkClient networkClient = new DefaultNetworkClient(mContext, this);
+        NetworkClient networkClient = new LocalOnlyNetworkClient(mContext, this);
         networkClient.postPinReset(requestId, machineId, PIN);
     }
 
@@ -683,19 +683,19 @@ public class DefaultContentProcessor implements ContentProcessor,
 
     @Override
     public void checkForUpdates(int requestId, int versionId, int deviceId) {
-        NetworkClient networkClient = new DefaultNetworkClient(mContext, this);
+        NetworkClient networkClient = new LocalOnlyNetworkClient(mContext, this);
         networkClient.checkForUpdates(requestId, versionId, deviceId);
     }
 
     @Override
     public void downloadUpdate(int requestId, int newVersion) {
-        NetworkClient networkClient = new DefaultNetworkClient(mContext, this);
+        NetworkClient networkClient = new LocalOnlyNetworkClient(mContext, this);
         networkClient.downloadUpdate(requestId, newVersion);
     }
 
     @Override
     public void createNewDevice(int requestId, int version, String name) {
-        NetworkClient networkClient = new DefaultNetworkClient(mContext, this);
+        NetworkClient networkClient = new LocalOnlyNetworkClient(mContext, this);
         networkClient.createNewDevice(requestId, version, name);
     }
 
@@ -793,7 +793,7 @@ public class DefaultContentProcessor implements ContentProcessor,
     }
 
     public void subscribeToRoaster(long steampunkUserId) {
-        NetworkClient networkClient = new DefaultNetworkClient(mContext, this);
+        NetworkClient networkClient = new LocalOnlyNetworkClient(mContext, this);
 
         networkClient.subscribeToRoaster(SteampunkUtils.getRequestId(mContext),
                 steampunkUserId);
@@ -1334,7 +1334,7 @@ public class DefaultContentProcessor implements ContentProcessor,
         }
 
         public void syncRoasters(int requestId) {
-            NetworkClient networkClient = new DefaultNetworkClient(mContext,
+            NetworkClient networkClient = new LocalOnlyNetworkClient(mContext,
                     DefaultContentProcessor.getInstance(mContext, null));
             networkClient.getRoasters(requestId);
         }
@@ -1342,7 +1342,7 @@ public class DefaultContentProcessor implements ContentProcessor,
         public void createRecipe(int requestId, Recipe newRecipe) {
             mPersistLock.lock();
 
-            NetworkClient networkClient = new DefaultNetworkClient(mContext,
+            NetworkClient networkClient = new LocalOnlyNetworkClient(mContext,
                     DefaultContentProcessor.getInstance(mContext, null));
 
             RemoteRecipe newRemoteRecipe = new RemoteRecipe(null,
@@ -1360,7 +1360,7 @@ public class DefaultContentProcessor implements ContentProcessor,
         public void updateRecipe(final int requestId, final Recipe updatedRecipe) {
             mPersistLock.lock();
 
-            NetworkClient networkClient = new DefaultNetworkClient(mContext,
+            NetworkClient networkClient = new LocalOnlyNetworkClient(mContext,
                     DefaultContentProcessor.getInstance(mContext, null));
 
             RemoteRecipe newRemoteRecipe = new RemoteRecipe(null,
@@ -1381,7 +1381,7 @@ public class DefaultContentProcessor implements ContentProcessor,
             mPersistLock.lock();
 
             // Send delete request to REST client
-            NetworkClient networkClient = new DefaultNetworkClient(mContext,
+            NetworkClient networkClient = new LocalOnlyNetworkClient(mContext,
                     DefaultContentProcessor.getInstance(mContext, null));
             networkClient.deleteRecipe(requestId, uuid);
 
@@ -1408,7 +1408,7 @@ public class DefaultContentProcessor implements ContentProcessor,
                 cursor.close();
 
                 RemoteFavorite remoteFavorite = new RemoteFavorite(recipeUuid, userId, uuid);
-                NetworkClient networkClient = new DefaultNetworkClient(
+                NetworkClient networkClient = new LocalOnlyNetworkClient(
                         mContext, DefaultContentProcessor.getInstance(mContext,
                         null));
                 networkClient.postFavorite(requestId, remoteFavorite);
@@ -1431,7 +1431,7 @@ public class DefaultContentProcessor implements ContentProcessor,
             (new Exception()).printStackTrace();
             mPersistLock.lock();
 
-            NetworkClient networkClient = new DefaultNetworkClient(mContext,
+            NetworkClient networkClient = new LocalOnlyNetworkClient(mContext,
                     DefaultContentProcessor.getInstance(mContext, null));
             networkClient.deleteFavorite(requestId, uuid);
 
