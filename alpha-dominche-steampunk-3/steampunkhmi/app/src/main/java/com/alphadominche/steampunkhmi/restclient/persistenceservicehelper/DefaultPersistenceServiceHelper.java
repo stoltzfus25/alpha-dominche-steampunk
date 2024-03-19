@@ -64,13 +64,13 @@ public class DefaultPersistenceServiceHelper implements
     }
 
     public boolean isLoggedIn() {
-        SharedPreferences preferences = this.mCurrentContext
-                .getSharedPreferences(Constants.SHARED_PREFS_NAME,
-                        Context.MODE_PRIVATE);
-        String authToken = preferences.getString(Constants.SP_AUTH_TOKEN, "");
-        if (null == authToken || 0 == authToken.length()) {
-            return false;
-        }
+//        SharedPreferences preferences = this.mCurrentContext
+//                .getSharedPreferences(Constants.SHARED_PREFS_NAME,
+//                        Context.MODE_PRIVATE);
+//        String authToken = preferences.getString(Constants.SP_AUTH_TOKEN, "");
+//        if (null == authToken || 0 == authToken.length()) {
+//            return false;
+//        }
 
         return true;
     }
